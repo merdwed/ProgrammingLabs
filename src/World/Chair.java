@@ -18,6 +18,6 @@ public class Chair extends Furniture implements Breaking {
     }
     @Override
     public String toString(){
-        return "World.Chair";
+        return "Chair";
     }
 }

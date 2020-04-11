@@ -15,6 +15,6 @@ public class Furniture extends Container implements Burning {
     }
     @Override
     public String toString(){
-        return "World.Furniture";
+        return "Furniture";
     }
 }

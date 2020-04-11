@@ -61,6 +61,6 @@ public abstract class PhysicalObject {
     }
     @Override
     public String toString() {
-        return "World.PhysicalObject";
+        return "PhysicalObject";
     }
 }

@@ -24,6 +24,6 @@ public abstract class Food extends PhysicalObject {
     protected FoodState state;
     @Override
     public String toString(){
-        return "World.Food";
+        return "Food";
     }
 }

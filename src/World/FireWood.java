@@ -14,6 +14,6 @@ public class FireWood extends PhysicalObject implements Burning{
     }
     @Override
     public String toString(){
-        return "World.FireWood";
+        return "FireWood";
     }
 }

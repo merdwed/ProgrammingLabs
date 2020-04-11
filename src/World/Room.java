@@ -17,7 +17,7 @@ public class Room extends Container {
 
     public String toString(){
 
-        return "World.Room";
+        return "Room";
 
     }
 }

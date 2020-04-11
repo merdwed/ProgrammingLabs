@@ -16,6 +16,6 @@ public class Trousers extends Container {
     }
     @Override
     public String toString(){
-        return "World.Trousers";
+        return "Trousers";
     }
 }

@@ -37,6 +37,6 @@ public class Egg extends Food implements Frying, Breaking {
     }
     @Override
     public String toString(){
-        return "World.Egg";
+        return "Egg";
     }
 }

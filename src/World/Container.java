@@ -120,6 +120,6 @@ public abstract class Container extends PhysicalObject implements Transferring {
     }*/
     @Override
     public String toString(){
-        return "World.Container";
+        return "Container";
     }
 }

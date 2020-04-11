@@ -36,6 +36,6 @@ public class Furnace extends Furniture{
     }
     @Override
     public String toString(){
-        return "World.Furnace";
+        return "Furnace";
     }
 }

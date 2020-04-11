@@ -37,6 +37,6 @@ public class Pan extends Container {
     }
     @Override
     public String toString(){
-        return "World.Pan";
+        return "Pan";
     }
 }
