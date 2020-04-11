@@ -3,6 +3,7 @@ package Taller;
 import World.*;
 
 public class Lab3Taller extends StoryTaller{
+    final int numberOfEgg = 21;
     private static Lab3Taller ourInstance = new Lab3Taller();
 
     public static Lab3Taller getInstance() {
@@ -20,7 +21,7 @@ public class Lab3Taller extends StoryTaller{
         actionRoom.put(new Chair(new float[]{0.8f,0.5f,0.5f}));
         actionRoom.put(new Pan(new float[]{0.3f,0.3f,0.1f}));
         actionRoom.put(new Pan(new float[]{0.4f,0.35f,0.2f}));
-        for(int i=0;i<20;i++) {
+        for(int i=0;i<numberOfEgg;i++) {
             actionRoom.put(new Egg());
         }
         spruts.put(new Trousers());
@@ -38,8 +39,8 @@ public class Lab3Taller extends StoryTaller{
         spruts.searchAndTake(actionRoom,Chair.class,SearchKey.FIRST);
         spruts.breakContent();
         //3
-        spruts.putContentObjectTo(furnace, FireWood.class,SearchKey.FIRST);
-        spruts.putContentObjectTo(furnace,FireWood.class,SearchKey.FIRST);
+        spruts.putContentObjectTo(FireWood.class,furnace, SearchKey.FIRST);
+        spruts.putContentObjectTo(FireWood.class,furnace,SearchKey.FIRST);
         furnace.burnContent();
         //4
         spruts.searchAndTake(actionRoom,Egg.class,SearchKey.FIRST);
@@ -50,7 +51,8 @@ public class Lab3Taller extends StoryTaller{
         //6
         spruts.putContentObjectToContentContainer(Egg.class,Trousers.class, SearchKey.FIRST, SearchKey.FIRST);
         //7
-        System.out.println("Julio is upset");
+        spruts.someBadSituation();
+        julio.someBadSituation();
         //8
         while(julio.searchAndTake(spruts,Egg.class,SearchKey.FIRST)==true);
         while(julio.searchAndTake(actionRoom,Egg.class,SearchKey.FIRST)==true);
@@ -62,12 +64,22 @@ public class Lab3Taller extends StoryTaller{
         while(julio.putContentObjectToContentContainer(Egg.class, Pan.class,SearchKey.FIRST,SearchKey.FIRST)==true);
         julio.cookContent(Pan.class);
         //12
-        Chair tempChair=(Chair)actionRoom.findAndGet(Chair.class,SearchKey.FREE);
-        tempChair.put(actionRoom.findAndGet(julio));
-        actionRoom.put(tempChair);
-        tempChair=(Chair)actionRoom.findAndGet(Chair.class, SearchKey.FREE);
-        tempChair.put(actionRoom.findAndGet(spruts));
-        actionRoom.put(tempChair);
+        {
+            Chair tempChair = (Chair) actionRoom.findAndGet(Chair.class, SearchKey.FREE);
+            tempChair.put(actionRoom.findAndGet(julio));
+            actionRoom.put(tempChair);
+            tempChair = (Chair) actionRoom.findAndGet(Chair.class, SearchKey.FREE);
+            tempChair.put(actionRoom.findAndGet(spruts));
+            actionRoom.put(tempChair);
+        }
+        //13
+        {
+            Pan tempPan=(Pan)julio.findAndGet(Pan.class,SearchKey.FIRST);
+            while(julio.searchAndTake(tempPan,Egg.class,SearchKey.FIRST) && spruts.searchAndTake(tempPan,Egg.class,SearchKey.FIRST));
+            actionRoom.put(tempPan);
+            julio.eatContent();
+            spruts.eatContent();
+        }
 
     }
 }
