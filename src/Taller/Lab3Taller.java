@@ -25,7 +25,7 @@ public class Lab3Taller extends StoryTaller{
             actionRoom.put(new Egg());
         }
         spruts.put(new Trousers());
-
+        WorldState.TimeController.objectTimeController.addToListOfUpdatableObjects(actionRoom);
     }
 
     public void storyActions(){
@@ -34,6 +34,7 @@ public class Lab3Taller extends StoryTaller{
         //1
         actionRoom.put(julio);
         actionRoom.put(spruts);
+
         //2
         spruts.searchAndTake(actionRoom,Chair.class,SearchKey.FIRST);
         spruts.searchAndTake(actionRoom,Chair.class,SearchKey.FIRST);

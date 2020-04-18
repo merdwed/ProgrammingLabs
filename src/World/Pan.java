@@ -26,7 +26,7 @@ public class Pan extends Container {
                 else {
                     content.set(i, temp);
                     if(temp instanceof  Food)
-                       System.out.println(((Food)temp).state.toString());
+                       System.out.println(((Food)temp).foodState.toString());
                     i++;
                 }
             }

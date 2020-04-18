@@ -17,9 +17,18 @@ public abstract class PhysicalObject {
         initDimensions();
         setExternalDimensions(exDim);
         setInternalDimensions(inDim);
+        objectTimeController=new PhysicalObjectTimeController();
+        objectTimeController.needToUpdateObjects=null;
+    }
+    protected class PhysicalObjectTimeController extends WorldState.TimeController.ObjectTimeController{
+        @Override
+        protected void updateThis(){
+            System.out.println("update in PhysicalObject " + PhysicalObject.this.toString());
+        }
     }
 
 
+    protected PhysicalObjectTimeController objectTimeController;
     private float[] externalDimensions;
     private float[] internalDimensions;
 

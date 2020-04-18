@@ -17,6 +17,7 @@ public abstract class Container extends PhysicalObject implements Transferring {
     public Container(float[] exDim, float[] inDim) {
         super(exDim, inDim);
         content = new ArrayList<PhysicalObject>();
+        objectTimeController.needToUpdateObjects=content;
     }
     //final static int defaultDepth = 5;
     //field
@@ -64,7 +65,7 @@ public abstract class Container extends PhysicalObject implements Transferring {
                         returnObject = content.get(i);
                         return returnObject;
                     case 2:
-                        returnObject = content.get(i);;
+                        returnObject = content.get(i);
                         break;
                 }
             }
@@ -92,32 +93,7 @@ public abstract class Container extends PhysicalObject implements Transferring {
         return returnObject;
     }
 
-    /*public World.PhysicalObject findAndGetRec(Class classObject, SearchKey key, int depth) {
-        World.PhysicalObject returnObject=findAndGet(classObject, key);
-        if(depth==0)
-            return returnObject;
-        World.PhysicalObject tempObject = null;
-        for(int i = 0; i < content.size(); i++) {
-            if(content.get(i) instanceof World.Container) {
-                tempObject = ((World.Container) content.get(i)).findAndGetRec(classObject, key, depth-1);
-                if(tempObject == null) continue;
-                switch(key){
-                    case RANDOM:
-                    case FIRST:
-                        return tempObject;
-                    case MAX:
-                        if(returnObject == null || returnObject.sizeCriterion() < tempObject.sizeCriterion())
-                            returnObject=tempObject;
-                        break;
-                    case MIN:
-                        if(returnObject == null || returnObject.sizeCriterion() > tempObject.sizeCriterion())
-                            returnObject=tempObject;
-                        break;
-                }
-            }
-        }
-        return returnObject;
-    }*/
+
     @Override
     public String toString(){
         return "Container";

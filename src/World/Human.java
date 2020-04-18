@@ -92,8 +92,8 @@ public class Human extends Container {
         for(int i=0;i<content.size();){
             if(content.get(i) instanceof Food) {
                 b=true;
-                System.out.println(toString() + " eat some " + ((Food) content.get(i)).state.toString()+" " + content.get(i).toString());
-                switch(((Food) content.get(i)).state){
+                System.out.println(toString() + " eat some " + ((Food) content.get(i)).foodState.toString()+" " + content.get(i).toString());
+                switch(((Food) content.get(i)).foodState){
                     case COOKED:
                         if(hunger>0) {
                             hunger -= 5;

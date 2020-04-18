@@ -6,7 +6,6 @@ public abstract class Food extends PhysicalObject {
     public Food() {
         this(new float[]{0, 0, 0});
     }
-
     public Food(float[] exDim) {
         this(exDim, new float[]{0, 0, 0});
     }
@@ -18,10 +17,28 @@ public abstract class Food extends PhysicalObject {
     }
     public Food(float[] exDim, float[] inDim, FoodState s) {
         super(exDim, inDim);
-        state=s;
+        foodState=s;
+
+        objectTimeController=new FoodTimeController();
+        shelfLife=DEFAULT_SHELF_LIFE;
     }
-    enum FoodState{ COOKED, RAW, COAL, SPOILED}
-    protected FoodState state;
+    public class FoodTimeController extends PhysicalObjectTimeController{
+        @Override
+        protected void updateThis(){
+
+            System.out.println("update in Food " + Food.this.toString());
+            if(FoodTimeController.getGlobalTime() - createdTime > shelfLife){
+                foodState=FoodState.SPOILED;
+                System.out.println(Food.this.toString() + " is " + foodState.toString());
+            }
+        }
+    }
+
+    enum FoodState { COOKED, RAW, COAL, SPOILED}
+    protected long shelfLife;
+    protected FoodState foodState;
+    private final int DEFAULT_SHELF_LIFE = 1440*365*10;
+
     @Override
     public String toString(){
         return "Food";

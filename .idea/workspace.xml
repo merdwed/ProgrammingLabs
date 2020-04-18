@@ -1,67 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cee57ced-e382-4732-b29a-064ed8a29e8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/Taller/Lab3Taller.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/Taller/StoryTaller.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/Breaking.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/Burning.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/Chair.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/Container$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/Container.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/Egg.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/FireWood.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/Food$FoodState.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/Food.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/Frying.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/Furnace.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/Furniture.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/Human$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/Human.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/Kitchen.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/Pan.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/PhysicalObject.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/Room.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/SearchKey.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/Transferring.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/World/Trousers.class" afterDir="false" />
+    <list default="true" id="cee57ced-e382-4732-b29a-064ed8a29e8c" name="Default Changelist" comment="time class was added in WorldState. &#10;WorldState can be package with two non-static classes for time and for weather, but I want have a static classes for change time and weather.&#10;TimeController in WorldState have nested class, which can be extended in PhysicalObject class (and child)&#10;All who extends ObjectTimeController can override function updateThis(). This function are called by ObjectTimeController from another objects when time are changed. You can change some fields there (which logical connecting with time)&#10;also rename field &quot;state&quot; in Food class to &quot;foodState&quot;&#10;(yea, this changes, not extending, but I think it will be more friendly to use)">
+      <change afterPath="$PROJECT_DIR$/src/World/ChestBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/World/WorldState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Breaking.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Burning.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Chair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Container$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Container.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Egg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/FireWood.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Food$FoodState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Food.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Frying.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Furnace.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Furniture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Human.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Kitchen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Lab3Taller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Pan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/PhysicalObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Room.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/SearchKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/StoryTaller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Transferring.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/Trousers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World/Chair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Chair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/Taller/Lab3Taller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/Taller/Lab3Taller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/World/Container$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/World/Container$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/World/Container.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/World/Container.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/World/Egg.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/World/Egg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/World/Food$FoodState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/World/Food$FoodState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/World/Food.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/World/Food.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/World/Human.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/World/Human.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/World/Pan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/World/Pan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/World/PhysicalObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/World/PhysicalObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Taller/Lab3Taller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Taller/Lab3Taller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/World/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Container.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/World/Egg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Egg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World/FireWood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/FireWood.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/World/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World/Furnace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Furnace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World/Furniture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Furniture.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/World/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World/Kitchen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Kitchen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/World/Pan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Pan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/World/PhysicalObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/PhysicalObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World/Trousers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Trousers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/World/Weather.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,64 +33,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/World/Human.java">
+        <entry file="file://$PROJECT_DIR$/src/Taller/Lab3Taller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="94" column="110" selection-start-line="94" selection-start-column="110" selection-end-line="94" selection-end-column="110" />
-              <folding>
-                <element signature="method#searchAndTake#0;class#Human#0" />
-                <element signature="method#breakContent#0;class#Human#0" />
-                <element signature="method#cookContent#0;class#Human#0" />
-                <element signature="e#2646#2647#0" expanded="true" />
-                <element signature="e#2675#2676#0" expanded="true" />
-                <element signature="e#3784#3785#0" expanded="true" />
-                <element signature="e#3811#3812#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/World/Kitchen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/World/Pan.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/World/PhysicalObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/World/Room.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/World/Trousers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="198">
+              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -138,8 +44,72 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/World/Food.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+              <folding>
+                <element signature="method#Food#4;class#Food#0" />
+                <element signature="class#FoodTimeController#0;class#Food#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/World/WorldState.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+              <caret line="102" column="92" selection-start-line="102" selection-start-column="92" selection-end-line="102" selection-end-column="92" />
+              <folding>
+                <element signature="initializer##0;class#TimeController#0;class#WorldState#0" />
+                <element signature="class#TimeState#0;class#TimeController#0;class#WorldState#0" />
+                <element signature="method#updateContent#0;class#ObjectTimeController#0;class#TimeController#0;class#WorldState#0" />
+                <element signature="method#setDayTime#0;class#TimeController#0;class#WorldState#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/World/PhysicalObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+              <folding>
+                <element signature="method#PhysicalObject#2;class#PhysicalObject#0" />
+                <element signature="class#PhysicalObjectTimeController#0;class#PhysicalObject#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/World/Chair.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/World/Human.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding>
+                <element signature="method#searchAndTake#0;class#Human#0" />
+                <element signature="method#breakContent#0;class#Human#0" />
+                <element signature="method#cookContent#0;class#Human#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/World/FireWood.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -154,19 +124,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/World/Furnace.java">
+        <entry file="file://$PROJECT_DIR$/src/World/Furniture.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+            <state relative-caret-position="160">
+              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/World/Furniture.java">
+        <entry file="file://$PROJECT_DIR$/src/World/Egg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            <state relative-caret-position="192">
+              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+              <folding>
+                <element signature="method#Egg#1;class#Egg#0" />
+                <element signature="method#Egg#3;class#Egg#0" />
+                <element signature="method#Egg#4;class#Egg#0" />
+                <element signature="method#onFry#0;class#Egg#0" />
+                <element signature="method#onBreak#0;class#Egg#0" />
+                <element signature="e#1469#1470#0" expanded="true" />
+                <element signature="e#1497#1498#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -180,6 +159,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>WorldState</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -213,24 +197,27 @@
         <option value="$PROJECT_DIR$/src/World/SearchKey.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Taller/StoryTaller.java" />
-        <option value="$PROJECT_DIR$/src/Taller/Lab3Taller.java" />
         <option value="$PROJECT_DIR$/src/World/Chair.java" />
-        <option value="$PROJECT_DIR$/src/World/Container.java" />
-        <option value="$PROJECT_DIR$/src/World/Egg.java" />
         <option value="$PROJECT_DIR$/src/World/FireWood.java" />
-        <option value="$PROJECT_DIR$/src/World/Food.java" />
         <option value="$PROJECT_DIR$/src/World/Furnace.java" />
         <option value="$PROJECT_DIR$/src/World/Furniture.java" />
         <option value="$PROJECT_DIR$/src/World/Kitchen.java" />
-        <option value="$PROJECT_DIR$/src/World/Pan.java" />
-        <option value="$PROJECT_DIR$/src/World/PhysicalObject.java" />
         <option value="$PROJECT_DIR$/src/World/Room.java" />
         <option value="$PROJECT_DIR$/src/World/Trousers.java" />
+        <option value="$PROJECT_DIR$/src/World/ChestBox.java" />
+        <option value="$PROJECT_DIR$/src/World/Pan.java" />
         <option value="$PROJECT_DIR$/src/World/Human.java" />
+        <option value="$PROJECT_DIR$/src/World/Container.java" />
+        <option value="$PROJECT_DIR$/src/World/Food.java" />
+        <option value="$PROJECT_DIR$/src/World/Egg.java" />
+        <option value="$PROJECT_DIR$/src/World/PhysicalObject.java" />
+        <option value="$PROJECT_DIR$/src/World/WorldState.java" />
+        <option value="$PROJECT_DIR$/src/Taller/Lab3Taller.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="2" />
     <option name="y" value="42" />
     <option name="width" value="1260" />
     <option name="height" value="942" />
@@ -241,8 +228,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -271,12 +256,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586648770193" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587250808781" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -327,12 +314,21 @@
       <workItem from="1586173326125" duration="11768000" />
       <workItem from="1586277016588" duration="3057000" />
       <workItem from="1586423311654" duration="24387000" />
-      <workItem from="1586641751768" duration="6232000" />
+      <workItem from="1586641751768" duration="35716000" />
+      <workItem from="1587233632772" duration="9317000" />
     </task>
+    <task id="LOCAL-00001" summary="I want to add weather">
+      <created>1586648855796</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586648855796</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76018000" />
+    <option name="totallyTimeSpent" value="114819000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -344,16 +340,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="42" width="1260" height="942" extended-state="0" />
+    <frame x="2" y="42" width="1260" height="942" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17333333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17666666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32988507" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32881773" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32881773" />
       <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.35344827" />
@@ -380,19 +376,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/World/Human.java</url>
-          <line>31</line>
-          <properties class="World.Human" method="putContentObjectTo">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="I want to add weather" />
+    <MESSAGE value="time class was added in WorldState. &#10;WorldState can be package with two non-static classes for time and for weather, but I want have a static classes for change time and weather.&#10;TimeController in WorldState have nested class, which can be extended in PhysicalObject class (and child)&#10;All who extends ObjectTimeController can override function updateThis(). This function are called by ObjectTimeController from another objects when time are changed. You can change some fields there (which logical connecting with time)&#10;also rename field &quot;state&quot; in Food class to &quot;foodState&quot;&#10;(yea, this changes, not extending, but I think it will be more friendly to use)" />
+    <option name="LAST_COMMIT_MESSAGE" value="time class was added in WorldState. &#10;WorldState can be package with two non-static classes for time and for weather, but I want have a static classes for change time and weather.&#10;TimeController in WorldState have nested class, which can be extended in PhysicalObject class (and child)&#10;All who extends ObjectTimeController can override function updateThis(). This function are called by ObjectTimeController from another objects when time are changed. You can change some fields there (which logical connecting with time)&#10;also rename field &quot;state&quot; in Food class to &quot;foodState&quot;&#10;(yea, this changes, not extending, but I think it will be more friendly to use)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/lang/Object.java">
@@ -407,6 +394,38 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Destroying.java" />
+    <entry file="file://$PROJECT_DIR$/lab3.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Weather.java" />
+    <entry file="file://$PROJECT_DIR$/src/World/Furnace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Taller/StoryTaller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/ChestBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/World/Breaking.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
@@ -421,100 +440,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Transferring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/SearchKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Taller/StoryTaller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab3.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Taller/Lab3Taller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="80" column="19" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Chair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Container.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="122" column="16" selection-start-line="122" selection-start-column="16" selection-end-line="122" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Egg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/FireWood.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Food.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Frying.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Furnace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Furniture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/World/Kitchen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -524,15 +449,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/World/Pan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/PhysicalObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+        <state relative-caret-position="323">
+          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -543,26 +461,135 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/SearchKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Transferring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/World/Trousers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="64">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+          <folding>
+            <element signature="method#Container#1;class#Container#0" />
+            <element signature="method#Container#2;class#Container#0" />
+            <element signature="method#put#0;class#Container#0" />
+            <element signature="method#keyChecker#0;class#Container#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+          <folding>
+            <element signature="method#Food#4;class#Food#0" />
+            <element signature="class#FoodTimeController#0;class#Food#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/FireWood.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Egg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="method#Egg#1;class#Egg#0" />
+            <element signature="method#Egg#3;class#Egg#0" />
+            <element signature="method#Egg#4;class#Egg#0" />
+            <element signature="method#onFry#0;class#Egg#0" />
+            <element signature="method#onBreak#0;class#Egg#0" />
+            <element signature="e#1469#1470#0" expanded="true" />
+            <element signature="e#1497#1498#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Frying.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Furniture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/World/Human.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="94" column="110" selection-start-line="94" selection-start-column="110" selection-end-line="94" selection-end-column="110" />
+        <state relative-caret-position="32">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
             <element signature="method#searchAndTake#0;class#Human#0" />
             <element signature="method#breakContent#0;class#Human#0" />
             <element signature="method#cookContent#0;class#Human#0" />
-            <element signature="e#2646#2647#0" expanded="true" />
-            <element signature="e#2675#2676#0" expanded="true" />
-            <element signature="e#3784#3785#0" expanded="true" />
-            <element signature="e#3811#3812#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Chair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/PhysicalObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="method#PhysicalObject#2;class#PhysicalObject#0" />
+            <element signature="class#PhysicalObjectTimeController#0;class#PhysicalObject#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/WorldState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="102" column="92" selection-start-line="102" selection-start-column="92" selection-end-line="102" selection-end-column="92" />
+          <folding>
+            <element signature="initializer##0;class#TimeController#0;class#WorldState#0" />
+            <element signature="class#TimeState#0;class#TimeController#0;class#WorldState#0" />
+            <element signature="method#updateContent#0;class#ObjectTimeController#0;class#TimeController#0;class#WorldState#0" />
+            <element signature="method#setDayTime#0;class#TimeController#0;class#WorldState#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Taller/Lab3Taller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
         </state>
       </provider>
     </entry>
