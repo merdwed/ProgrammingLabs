@@ -19,7 +19,7 @@ public class Room extends Container {
     protected class RoomTemperatureController extends PhysicalObject.PhysicalObjectTemperatureController{
         @Override
         protected void updateThis(float temp){
-            Furnace obj=(Furnace)find(Furnace.class,SearchKey.FIRST);
+            WarmSource obj=(Furnace)find(Furnace.class,SearchKey.FIRST);
             if( obj != null && obj.isActive()){
                 temp=(obj.getSourceTemperature());
             }

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cee57ced-e382-4732-b29a-064ed8a29e8c" name="Default Changelist" comment="time class was added in WorldState. &#10;WorldState can be package with two non-static classes for time and for weather, but I want have a static classes for change time and weather.&#10;TimeController in WorldState have nested class, which can be extended in PhysicalObject class (and child)&#10;All who extends ObjectTimeController can override function updateThis(). This function are called by ObjectTimeController from another objects when time are changed. You can change some fields there (which logical connecting with time)&#10;also rename field &quot;state&quot; in Food class to &quot;foodState&quot;&#10;(yea, this changes, not extending, but I think it will be more friendly to use)">
-      <change beforePath="$PROJECT_DIR$/src/Taller/Lab3Taller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Taller/Lab3Taller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Taller/Lab4Taller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Taller/Lab4Taller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/World/ChestBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/ChestBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/World/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Room.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/World/ChestBox.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+            <state relative-caret-position="336">
+              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
               <folding>
                 <element signature="e#1211#1212#0" expanded="true" />
                 <element signature="e#1244#1245#0" expanded="true" />
@@ -108,7 +108,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Taller/Lab4Taller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="246">
@@ -118,16 +118,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/World/Egg.java">
+        <entry file="file://$PROJECT_DIR$/src/World/Room.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-              <folding>
-                <element signature="method#Egg#1;class#Egg#0" />
-                <element signature="method#Egg#3;class#Egg#0" />
-                <element signature="method#Egg#4;class#Egg#0" />
-                <element signature="method#onBreak#0;class#Egg#0" />
-              </folding>
+            <state relative-caret-position="340">
+              <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -194,11 +188,11 @@
         <option value="$PROJECT_DIR$/src/World/WorldState.java" />
         <option value="$PROJECT_DIR$/src/World/PhysicalObject.java" />
         <option value="$PROJECT_DIR$/src/World/Furnace.java" />
-        <option value="$PROJECT_DIR$/src/World/Room.java" />
-        <option value="$PROJECT_DIR$/src/World/ChestBox.java" />
         <option value="$PROJECT_DIR$/src/World/Human.java" />
         <option value="$PROJECT_DIR$/src/Taller/Lab3Taller.java" />
         <option value="$PROJECT_DIR$/src/Taller/Lab4Taller.java" />
+        <option value="$PROJECT_DIR$/src/World/Room.java" />
+        <option value="$PROJECT_DIR$/src/World/ChestBox.java" />
       </list>
     </option>
   </component>
@@ -255,7 +249,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587331887124" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587333374035" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -307,7 +301,7 @@
       <workItem from="1586277016588" duration="3057000" />
       <workItem from="1586423311654" duration="24387000" />
       <workItem from="1586641751768" duration="35716000" />
-      <workItem from="1587233632772" duration="33863000" />
+      <workItem from="1587233632772" duration="34503000" />
     </task>
     <task id="LOCAL-00001" summary="I want to add weather">
       <created>1586648855796</created>
@@ -320,7 +314,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139365000" />
+    <option name="totallyTimeSpent" value="140005000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -332,7 +326,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="26" y="156" width="1260" height="942" extended-state="0" />
+    <frame x="19" y="59" width="1260" height="942" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1775" />
@@ -540,13 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Room.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="25" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/World/SearchKey.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
@@ -640,17 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/ChestBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-          <folding>
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1244#1245#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/World/Chair.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
@@ -704,6 +680,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="90" column="26" lean-forward="true" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/ChestBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+          <folding>
+            <element signature="e#1211#1212#0" expanded="true" />
+            <element signature="e#1244#1245#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
