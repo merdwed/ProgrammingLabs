@@ -13,13 +13,15 @@ public class Room extends Container {
     public Room(float[] exDim, float[] inDim) {
         super(exDim, inDim);
         objectTemperatureController=new RoomTemperatureController();
-        objectTemperatureController.needToUpdateObjects=content;
     }
 
     protected class RoomTemperatureController extends PhysicalObject.PhysicalObjectTemperatureController{
+        RoomTemperatureController(){
+            needToUpdateObjects=content;
+        }
         @Override
         protected void updateThis(float temp){
-            WarmSource obj=(Furnace)find(Furnace.class,SearchKey.FIRST);
+            WarmSource obj=(Furnace)find(Furnace.class);
             if( obj != null && obj.isActive()){
                 temp=(obj.getSourceTemperature());
             }

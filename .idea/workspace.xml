@@ -3,8 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="cee57ced-e382-4732-b29a-064ed8a29e8c" name="Default Changelist" comment="time class was added in WorldState. &#10;WorldState can be package with two non-static classes for time and for weather, but I want have a static classes for change time and weather.&#10;TimeController in WorldState have nested class, which can be extended in PhysicalObject class (and child)&#10;All who extends ObjectTimeController can override function updateThis(). This function are called by ObjectTimeController from another objects when time are changed. You can change some fields there (which logical connecting with time)&#10;also rename field &quot;state&quot; in Food class to &quot;foodState&quot;&#10;(yea, this changes, not extending, but I think it will be more friendly to use)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/World/ChestBox$ChestBoxTemperatureController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/World/ChestBox$ChestBoxTemperatureController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/World/Container.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/World/Container.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/World/Human.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/World/Human.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/World/Room$RoomTemperatureController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/World/Room$RoomTemperatureController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/World/Transferring.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/World/Transferring.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Taller/Lab4Taller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Taller/Lab4Taller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/World/ChestBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/ChestBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/World/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/World/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/World/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/World/Transferring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Transferring.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,94 +25,99 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/World/Container.java">
+        <entry file="file://$PROJECT_DIR$/src/World/ChestBox.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="159">
+              <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/World/SearchKey.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/World/Transferring.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/World/WorldState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="41" column="66" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
               <folding>
-                <element signature="method#Container#1;class#Container#0" />
-                <element signature="method#Container#2;class#Container#0" />
-                <element signature="method#put#0;class#Container#0" />
-                <element signature="method#keyChecker#0;class#Container#0" />
-                <element signature="method#find#0;class#Container#0" />
-                <element signature="method#find#1;class#Container#0" />
-                <element signature="method#findAndGet#0;class#Container#0" />
-                <element signature="method#findAndGet#1;class#Container#0" />
+                <element signature="e#1295#1296#0" expanded="true" />
+                <element signature="e#1348#1349#0" expanded="true" />
+                <element signature="initializer##0;class#TimeController#0;class#WorldState#0" />
+                <element signature="class#TimeState#0;class#TimeController#0;class#WorldState#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Taller/Lab3Taller.java">
+        <entry file="file://$PROJECT_DIR$/src/World/Kitchen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="832">
-              <caret line="78" column="123" selection-start-line="78" selection-start-column="123" selection-end-line="78" selection-end-column="123" />
+            <state relative-caret-position="176">
+              <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+              <folding>
+                <element signature="e#73#74#0" expanded="true" />
+                <element signature="e#115#116#0" expanded="true" />
+                <element signature="e#152#153#0" expanded="true" />
+                <element signature="e#201#202#0" expanded="true" />
+                <element signature="e#253#254#0" expanded="true" />
+                <element signature="e#288#289#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/World/ChestBox.java">
+        <entry file="file://$PROJECT_DIR$/src/World/Room.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+            <state relative-caret-position="288">
+              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
               <folding>
-                <element signature="e#1211#1212#0" expanded="true" />
-                <element signature="e#1244#1245#0" expanded="true" />
+                <element signature="e#560#561#0" expanded="true" />
+                <element signature="e#602#603#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/World/Chair.java">
+        <entry file="file://$PROJECT_DIR$/src/World/Trousers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/World/Burning.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/World/Breaking.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/World/Human.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="88" column="11" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
+            <state relative-caret-position="208">
+              <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
               <folding>
-                <element signature="class#Mood#0;class#Human#0" />
-                <element signature="class#InteractionTransfer#0;class#Human#0" />
-                <element signature="method#putContentObjectTo#0;class#InteractionTransfer#0;class#Human#0" />
-                <element signature="method#breakContent#0;class#Human#0" />
-                <element signature="method#cookContent#0;class#Human#0" />
+                <element signature="e#105#106#0" expanded="true" />
+                <element signature="e#147#148#0" expanded="true" />
+                <element signature="e#185#186#0" expanded="true" />
+                <element signature="e#234#235#0" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#322#323#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Taller/StoryTaller.java">
+        <entry file="file://$PROJECT_DIR$/src/World/WarmSource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="48">
+              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -111,17 +125,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Taller/Lab4Taller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="90" column="26" lean-forward="true" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
+            <state relative-caret-position="144">
+              <caret line="89" column="14" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/World/Room.java">
+        <entry file="file://$PROJECT_DIR$/src/World/Food.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+            <state relative-caret-position="339">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="e#116#117#0" expanded="true" />
+                <element signature="e#158#159#0" expanded="true" />
+                <element signature="e#191#192#0" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#286#287#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+                <element signature="e#385#386#0" expanded="true" />
+                <element signature="e#433#434#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,6 +163,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>WorldState</find>
+      <find>Container</find>
+      <find>Sea</find>
+      <find>Search</find>
+      <find>Pan</find>
+      <find>Sear</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -184,15 +213,16 @@
         <option value="$PROJECT_DIR$/src/World/Egg.java" />
         <option value="$PROJECT_DIR$/src/World/Food.java" />
         <option value="$PROJECT_DIR$/src/World/WarmSource.java" />
-        <option value="$PROJECT_DIR$/src/World/Container.java" />
-        <option value="$PROJECT_DIR$/src/World/WorldState.java" />
         <option value="$PROJECT_DIR$/src/World/PhysicalObject.java" />
         <option value="$PROJECT_DIR$/src/World/Furnace.java" />
-        <option value="$PROJECT_DIR$/src/World/Human.java" />
         <option value="$PROJECT_DIR$/src/Taller/Lab3Taller.java" />
-        <option value="$PROJECT_DIR$/src/Taller/Lab4Taller.java" />
-        <option value="$PROJECT_DIR$/src/World/Room.java" />
+        <option value="$PROJECT_DIR$/src/World/Transferring.java" />
+        <option value="$PROJECT_DIR$/src/World/Container.java" />
         <option value="$PROJECT_DIR$/src/World/ChestBox.java" />
+        <option value="$PROJECT_DIR$/src/World/Human.java" />
+        <option value="$PROJECT_DIR$/src/Taller/Lab4Taller.java" />
+        <option value="$PROJECT_DIR$/src/World/WorldState.java" />
+        <option value="$PROJECT_DIR$/src/World/Room.java" />
       </list>
     </option>
   </component>
@@ -249,7 +279,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587333374035" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587340526039" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/World" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -301,7 +332,7 @@
       <workItem from="1586277016588" duration="3057000" />
       <workItem from="1586423311654" duration="24387000" />
       <workItem from="1586641751768" duration="35716000" />
-      <workItem from="1587233632772" duration="34503000" />
+      <workItem from="1587233632772" duration="41059000" />
     </task>
     <task id="LOCAL-00001" summary="I want to add weather">
       <created>1586648855796</created>
@@ -314,7 +345,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140005000" />
+    <option name="totallyTimeSpent" value="146561000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -336,10 +367,10 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32881773" />
+      <window_info anchor="bottom" id="Messages" order="0" visible="true" weight="0.32881773" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32881773" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.35344827" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3596059" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -430,210 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Furniture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-          <folding>
-            <element signature="e#183#184#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Furnace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1024">
-          <caret line="68" column="13" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-          <folding>
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#2001#2002#0" expanded="true" />
-            <element signature="e#2033#2034#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Frying.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Food.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#116#117#0" expanded="true" />
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#191#192#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Pan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-          <folding>
-            <element signature="e#70#71#0" expanded="true" />
-            <element signature="e#112#113#0" expanded="true" />
-            <element signature="e#145#146#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Kitchen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-          <folding>
-            <element signature="e#73#74#0" expanded="true" />
-            <element signature="e#115#116#0" expanded="true" />
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/PhysicalObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="87" column="5" lean-forward="true" selection-start-line="85" selection-start-column="4" selection-end-line="87" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#PhysicalObject#2;class#PhysicalObject#0" />
-            <element signature="class#PhysicalObjectTimeController#0;class#PhysicalObject#0" />
-            <element signature="class#PhysicalObjectTemperatureController#0;class#PhysicalObject#0" />
-            <element signature="method#initDimensions#0;class#PhysicalObject#0" />
-            <element signature="method#setExternalDimensions#0;class#PhysicalObject#0" />
-            <element signature="method#setInternalDimensions#0;class#PhysicalObject#0" />
-            <element signature="e#3006#3007#0" expanded="true" />
-            <element signature="e#3047#3048#0" expanded="true" />
-            <element signature="e#3096#3097#0" expanded="true" />
-            <element signature="e#3137#3138#0" expanded="true" />
-            <element signature="e#3305#3306#0" expanded="true" />
-            <element signature="e#3344#3345#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/SearchKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Transferring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Trousers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-          <folding>
-            <element signature="e#105#106#0" expanded="true" />
-            <element signature="e#147#148#0" expanded="true" />
-            <element signature="e#185#186#0" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/WarmSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/WorldState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
-          <folding>
-            <element signature="e#1348#1349#0" expanded="true" />
-            <element signature="initializer##0;class#TimeController#0;class#WorldState#0" />
-            <element signature="class#TimeState#0;class#TimeController#0;class#WorldState#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/FireWood.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-          <folding>
-            <element signature="e#103#104#0" expanded="true" />
-            <element signature="e#145#146#0" expanded="true" />
-            <element signature="e#183#184#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Egg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-          <folding>
-            <element signature="method#Egg#1;class#Egg#0" />
-            <element signature="method#Egg#3;class#Egg#0" />
-            <element signature="method#Egg#4;class#Egg#0" />
-            <element signature="method#onBreak#0;class#Egg#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Container.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="method#Container#1;class#Container#0" />
-            <element signature="method#Container#2;class#Container#0" />
-            <element signature="method#put#0;class#Container#0" />
-            <element signature="method#keyChecker#0;class#Container#0" />
-            <element signature="method#find#0;class#Container#0" />
-            <element signature="method#find#1;class#Container#0" />
-            <element signature="method#findAndGet#0;class#Container#0" />
-            <element signature="method#findAndGet#1;class#Container#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Chair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/World/Burning.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -655,17 +482,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Human.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="88" column="11" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
-          <folding>
-            <element signature="class#Mood#0;class#Human#0" />
-            <element signature="class#InteractionTransfer#0;class#Human#0" />
-            <element signature="method#putContentObjectTo#0;class#InteractionTransfer#0;class#Human#0" />
-            <element signature="method#breakContent#0;class#Human#0" />
-            <element signature="method#cookContent#0;class#Human#0" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/umlLab4.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-253.0" y="3.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/uml.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-253.5" y="3.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab4.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-253.5" y="3.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
@@ -676,27 +537,1040 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Taller/Lab4Taller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="90" column="26" lean-forward="true" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="296.0" y="296.0">com</node>
+            <node x="171.0" y="148.0">netscape</node>
+            <node x="154.0" y="222.0">oracle</node>
+            <node x="283.0" y="370.0">org</node>
+            <node x="0.0" y="222.0">World</node>
+            <node x="142.0" y="370.0">sun</node>
+            <node x="0.0" y="148.0">META-INF</node>
+            <node x="0.0" y="444.0">jdk</node>
+            <node x="0.0" y="74.0">groovyjarjarasm</node>
+            <node x="0.0" y="370.0">java</node>
+            <node x="339.0" y="148.0">groovy</node>
+            <node x="149.0" y="296.0">javax</node>
+            <node x="203.0" y="74.0">Exceptions</node>
+            <node x="0.0" y="296.0">Taller</node>
+            <node x="0.0" y="0.0">groovyjarjarcommonscli</node>
+            <node x="307.0" y="222.0">javafx</node>
+            <node x="243.0" y="0.0">groovyjarjarantlr</node>
+            <node x="138.0" y="444.0">Main</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-28.0" y="220.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Room.java">
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/merdwed/IdeaProjects/lab3/src/Exceptions;C:/Users/merdwed/IdeaProjects/lab3/src/Taller;C:/Users/merdwed/IdeaProjects/lab3/src/World;">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/Exceptions;C:/Users/merdwed/IdeaProjects/lab3/src/Taller;C:/Users/merdwed/IdeaProjects/lab3/src/World;</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="240.0" y="240.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Chair.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        <state relative-caret-position="32">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Egg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+          <folding>
+            <element signature="method#Egg#1;class#Egg#0" />
+            <element signature="method#Egg#3;class#Egg#0" />
+            <element signature="method#Egg#4;class#Egg#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/FireWood.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <folding>
+            <element signature="e#103#104#0" expanded="true" />
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#183#184#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="method#Container#1;class#Container#0" />
+            <element signature="method#Container#2;class#Container#0" />
+            <element signature="method#put#0;class#Container#0" />
+            <element signature="method#keyChecker#0;class#Container#0" />
+            <element signature="method#find#0;class#Container#0" />
+            <element signature="method#find#1;class#Container#0" />
+            <element signature="e#2693#2694#0" expanded="true" />
+            <element signature="e#2721#2722#0" expanded="true" />
+            <element signature="method#findAndGet#0;class#Container#0" />
+            <element signature="method#findAndGet#1;class#Container#0" />
+            <element signature="e#3154#3155#0" expanded="true" />
+            <element signature="e#3180#3181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Furniture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#183#184#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Pan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="e#70#71#0" expanded="true" />
+            <element signature="e#112#113#0" expanded="true" />
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/PhysicalObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#PhysicalObject#2;class#PhysicalObject#0" />
+            <element signature="class#PhysicalObjectTimeController#0;class#PhysicalObject#0" />
+            <element signature="class#PhysicalObjectTemperatureController#0;class#PhysicalObject#0" />
+            <element signature="method#initDimensions#0;class#PhysicalObject#0" />
+            <element signature="method#setExternalDimensions#0;class#PhysicalObject#0" />
+            <element signature="method#setInternalDimensions#0;class#PhysicalObject#0" />
+            <element signature="e#3006#3007#0" expanded="true" />
+            <element signature="e#3047#3048#0" expanded="true" />
+            <element signature="e#3096#3097#0" expanded="true" />
+            <element signature="e#3137#3138#0" expanded="true" />
+            <element signature="e#3305#3306#0" expanded="true" />
+            <element signature="e#3344#3345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/World">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>World</OriginalElement>
+          <nodes>
+            <node x="721.6316147129244" y="1388.0">World.SearchKey</node>
+            <node x="840.6316147129244" y="1343.0">World.PhysicalObject</node>
+            <node x="3072.2166666666662" y="1814.0">World.Food.FoodTimeController</node>
+            <node x="1674.4166666666665" y="2351.0">World.Human.HumanTemperatureController</node>
+            <node x="2419.046364802904" y="89.0">World.WorldState</node>
+            <node x="1064.2499999999995" y="310.5">World.WorldState.WeatherController</node>
+            <node x="977.7499999999997" y="896.0">World.WorldState.TimeController.ObjectTimeController</node>
+            <node x="2635.416666666666" y="2340.0">World.Pan</node>
+            <node x="213.95684480054774" y="3252.0">World.Kitchen</node>
+            <node x="2843.4166666666665" y="2056.5">World.Frying</node>
+            <node x="1069.6874999999995" y="508.0">World.WorldState.TimeController</node>
+            <node x="174.83333333333303" y="2056.5">World.Burning</node>
+            <node x="253.33333333333303" y="2351.0">World.FireWood</node>
+            <node x="118.41689675429006" y="2661.0">World.Furnace</node>
+            <node x="917.6249999999997" y="0.0">World.WorldState.WeatherController.ObjectTemperatureController</node>
+            <node x="50.75" y="2351.0">World.Furnace.FurnaceTimeController</node>
+            <node x="872.5416666666664" y="1957.0">World.Container</node>
+            <node x="3208.8399480462576" y="2672.0">World.Egg</node>
+            <node x="1458.4166666666665" y="2351.0">World.Breaking</node>
+            <node x="143.95684480054774" y="2951.0">World.Room.RoomTemperatureController</node>
+            <node x="213.95684480054774" y="3106.5">World.Room</node>
+            <node x="2122.4166666666665" y="2329.0">World.Human.InteractionTransfer</node>
+            <node x="3115.539948046258" y="2023.0">World.Food</node>
+            <node x="1015.2916666666664" y="2351.0">World.Trousers</node>
+            <node x="529.583333333333" y="2717.0">World.Chair</node>
+            <node x="588.2916666666665" y="2351.0">World.Furniture</node>
+            <node x="946.2499999999997" y="267.0">World.WorldState.TimeController.TimeState</node>
+            <node x="824.9674975415033" y="1792.0">World.Transferring</node>
+            <node x="1755.1984241020714" y="2606.0">World.Human</node>
+            <node x="1447.4655809648161" y="1152.0">World.PhysicalObject.PhysicalObjectTemperatureController</node>
+            <node x="3250.2166666666662" y="1399.0">World.Food.FoodState</node>
+            <node x="1144.472195677741" y="3062.0">World.ChestBox</node>
+            <node x="1895.4166666666665" y="2317.0">World.Human.Mood</node>
+            <node x="1127.472195677741" y="2951.0">World.ChestBox.ChestBoxTemperatureController</node>
+            <node x="759.2916666666664" y="2340.0">World.WarmSource</node>
+            <node x="1152.7499999999995" y="1163.0">World.PhysicalObject.PhysicalObjectTimeController</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="World.Container" target="World.SearchKey">
+              <point x="-144.4000000000001" y="-125.0" />
+              <point x="908.6416666666663" y="1937.0" />
+              <point x="814.4674975415033" y="1937.0" />
+              <point x="814.4674975415033" y="1712.0" />
+              <point x="738.1316147129244" y="1712.0" />
+              <point x="-33.0" y="69.5" />
+            </edge>
+            <edge source="World.Human" target="World.Container">
+              <point x="-78.23529411764707" y="-147.5" />
+              <point x="1809.963129984424" y="2506.0" />
+              <point x="1663.9166666666665" y="2506.0" />
+              <point x="1663.9166666666665" y="2277.0" />
+              <point x="1125.2416666666663" y="2277.0" />
+              <point x="72.19999999999982" y="125.0" />
+            </edge>
+            <edge source="World.Human" target="World.Breaking">
+              <point x="-93.88235294117658" y="-147.5" />
+              <point x="1794.3160711608948" y="2516.0" />
+              <point x="1555.9166666666665" y="2516.0" />
+              <point x="0.0" y="25.5" />
+            </edge>
+            <edge source="World.Egg" target="World.WorldState.TimeController">
+              <point x="63.125" y="-81.5" />
+              <point x="3372.9649480462576" y="2576.0" />
+              <point x="3399.5166666666664" y="2576.0" />
+              <point x="3399.5166666666664" y="866.0" />
+              <point x="1333.6874999999995" y="866.0" />
+              <point x="120.0" y="169.0" />
+            </edge>
+            <edge source="World.Food" target="World.Food.FoodState">
+              <point x="70.70000000000005" y="-59.0" />
+              <point x="3287.239948046258" y="1927.0" />
+              <point x="3332.508333333333" y="1927.0" />
+              <point x="3332.508333333333" y="1772.0" />
+              <point x="3325.9666666666662" y="1772.0" />
+              <point x="25.25" y="58.5" />
+            </edge>
+            <edge source="World.Human.HumanTemperatureController" target="World.PhysicalObject.PhysicalObjectTemperatureController">
+              <point x="0.0" y="-25.5" />
+              <point x="1774.9166666666665" y="1323.0" />
+              <point x="1665.6322476314826" y="1323.0" />
+              <point x="99.16666666666652" y="25.5" />
+            </edge>
+            <edge source="World.Human.HumanTemperatureController" target="World.Human">
+              <point x="0.0" y="25.5" />
+              <point x="1774.9166666666665" y="2486.0" />
+              <point x="1841.257247631483" y="2486.0" />
+              <point x="-46.94117647058829" y="-147.5" />
+            </edge>
+            <edge source="World.WorldState.TimeController" target="World.WorldState.TimeController.TimeState">
+              <point x="-72.0" y="-169.0" />
+              <point x="1141.6874999999995" y="468.0" />
+              <point x="1006.8749999999997" y="468.0" />
+              <point x="12.125" y="80.5" />
+            </edge>
+            <edge source="World.WorldState.TimeController" target="World.WorldState.WeatherController">
+              <point x="72.0" y="-169.0" />
+              <point x="1285.6874999999995" y="488.0" />
+              <point x="1249.2499999999995" y="488.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="World.ChestBox" target="World.Furniture">
+              <point x="-50.85714285714266" y="-70.0" />
+              <point x="1182.6150528205983" y="3032.0" />
+              <point x="969.7916666666664" y="3032.0" />
+              <point x="969.7916666666664" y="2556.0" />
+              <point x="726.708333333333" y="2556.0" />
+              <point x="62.916666666666515" y="25.5" />
+            </edge>
+            <edge source="World.ChestBox" target="World.ChestBox.ChestBoxTemperatureController">
+              <point x="-25.42857142857156" y="-70.0" />
+              <point x="1208.0436242491694" y="3022.0" />
+              <point x="1162.8055290110744" y="3022.0" />
+              <point x="-70.66666666666652" y="25.5" />
+            </edge>
+            <edge source="World.Furniture" target="World.Burning">
+              <point x="-50.333333333333485" y="-25.5" />
+              <point x="613.458333333333" y="2227.0" />
+              <point x="333.99999999999955" y="2227.0" />
+              <point x="63.666666666666515" y="25.5" />
+            </edge>
+            <edge source="World.PhysicalObject.PhysicalObjectTemperatureController" target="World.PhysicalObject">
+              <point x="19.833333333333485" y="25.5" />
+              <point x="1586.2989142981496" y="1313.0" />
+              <point x="1230.1316147129244" y="1313.0" />
+              <point x="184.5" y="-114.5" />
+            </edge>
+            <edge source="World.Furnace.FurnaceTimeController" target="World.WorldState.TimeController.ObjectTimeController">
+              <point x="-41.0" y="-25.5" />
+              <point x="91.75" y="2297.0" />
+              <point x="127.25" y="2297.0" />
+              <point x="127.25" y="1127.0" />
+              <point x="1010.6499999999997" y="1127.0" />
+              <point x="-131.5999999999999" y="103.0" />
+            </edge>
+            <edge source="World.Egg" target="World.PhysicalObject">
+              <point x="12.625" y="-81.5" />
+              <point x="3322.4649480462576" y="2556.0" />
+              <point x="3377.5166666666664" y="2556.0" />
+              <point x="3377.5166666666664" y="1602.0" />
+              <point x="1239.8421410287135" y="1602.0" />
+              <point x="194.21052631578914" y="114.5" />
+            </edge>
+            <edge source="World.Human" target="World.PhysicalObject">
+              <point x="93.88235294117658" y="-147.5" />
+              <point x="1982.080777043248" y="2566.0" />
+              <point x="2821.9166666666665" y="2566.0" />
+              <point x="2821.9166666666665" y="1662.0" />
+              <point x="1131.9474041866085" y="1662.0" />
+              <point x="86.31578947368416" y="114.5" />
+            </edge>
+            <edge source="World.Food" target="World.WorldState.TimeController">
+              <point x="10.099999999999909" y="-59.0" />
+              <point x="3226.639948046258" y="1937.0" />
+              <point x="3239.7166666666662" y="1937.0" />
+              <point x="3239.7166666666662" y="876.0" />
+              <point x="1285.6874999999995" y="876.0" />
+              <point x="72.0" y="169.0" />
+            </edge>
+            <edge source="World.WorldState.TimeController.ObjectTimeController" target="World.WorldState.TimeController.TimeState">
+              <point x="-82.25" y="-103.0" />
+              <point x="1059.9999999999995" y="876.0" />
+              <point x="1058.4999999999995" y="876.0" />
+              <point x="1058.4999999999995" y="488.0" />
+              <point x="958.3749999999997" y="488.0" />
+              <point x="-36.375" y="80.5" />
+            </edge>
+            <edge source="World.Room.RoomTemperatureController" target="World.PhysicalObject.PhysicalObjectTemperatureController">
+              <point x="-72.75" y="-25.5" />
+              <point x="168.20684480054774" y="2931.0" />
+              <point x="22.875" y="2931.0" />
+              <point x="22.875" y="1283.0" />
+              <point x="1467.2989142981496" y="1283.0" />
+              <point x="-99.16666666666652" y="25.5" />
+            </edge>
+            <edge source="World.Pan" target="World.Food">
+              <point x="70.40000000000009" y="-36.5" />
+              <point x="2793.8166666666666" y="2297.0" />
+              <point x="3140.789948046258" y="2297.0" />
+              <point x="-75.75" y="59.0" />
+            </edge>
+            <edge source="World.Transferring" target="World.PhysicalObject">
+              <point x="73.75" y="-47.5" />
+              <point x="1046.2174975415032" y="1772.0" />
+              <point x="980.8947726076613" y="1772.0" />
+              <point x="-64.73684210526312" y="114.5" />
+            </edge>
+            <edge source="World.Egg" target="World.Food.FoodState">
+              <point x="37.875" y="-81.5" />
+              <point x="3347.7149480462576" y="2566.0" />
+              <point x="3388.5166666666664" y="2566.0" />
+              <point x="3388.5166666666664" y="1592.0" />
+              <point x="3342.7999999999993" y="1592.0" />
+              <point x="42.08333333333326" y="58.5" />
+            </edge>
+            <edge source="World.Breaking" target="World.PhysicalObject">
+              <point x="0.0" y="-25.5" />
+              <point x="1555.9166666666665" y="1732.0" />
+              <point x="1067.2105620813452" y="1732.0" />
+              <point x="21.578947368420813" y="114.5" />
+            </edge>
+            <edge source="World.Furnace" target="World.PhysicalObject">
+              <point x="-119.25" y="-92.5" />
+              <point x="131.66689675429006" y="2586.0" />
+              <point x="40.25" y="2586.0" />
+              <point x="40.25" y="1732.0" />
+              <point x="873.000035765556" y="1732.0" />
+              <point x="-172.63157894736833" y="114.5" />
+            </edge>
+            <edge source="World.Food" target="World.WorldState">
+              <point x="90.90000000000009" y="-59.0" />
+              <point x="3307.439948046258" y="1937.0" />
+              <point x="3361.7166666666662" y="1937.0" />
+              <point x="3361.7166666666662" y="247.0" />
+              <point x="2485.296364802904" y="247.0" />
+              <point x="13.25" y="14.5" />
+            </edge>
+            <edge source="World.Room.RoomTemperatureController" target="World.Furnace">
+              <point x="-24.25" y="-25.5" />
+              <point x="216.70684480054774" y="2931.0" />
+              <point x="250.91689675429006" y="2931.0" />
+              <point x="0.0" y="92.5" />
+            </edge>
+            <edge source="World.Room" target="World.PhysicalObject">
+              <point x="-60.40000000000009" y="-25.5" />
+              <point x="229.05684480054765" y="3042.0" />
+              <point x="0.0" y="3042.0" />
+              <point x="0.0" y="1722.0" />
+              <point x="851.421088397135" y="1722.0" />
+              <point x="-194.21052631578937" y="114.5" />
+            </edge>
+            <edge source="World.WorldState.TimeController.ObjectTimeController" target="World.PhysicalObject">
+              <point x="0.0" y="103.0" />
+              <point x="1142.2499999999995" y="1233.0" />
+              <point x="984.1316147129244" y="1233.0" />
+              <point x="-61.5" y="-114.5" />
+            </edge>
+            <edge source="World.Human.InteractionTransfer" target="World.PhysicalObject">
+              <point x="163.9999999999999" y="-47.5" />
+              <point x="2532.416666666666" y="2297.0" />
+              <point x="2443.257247631483" y="2297.0" />
+              <point x="2443.257247631483" y="1682.0" />
+              <point x="1088.7895094497665" y="1682.0" />
+              <point x="43.15789473684208" y="114.5" />
+            </edge>
+            <edge source="World.PhysicalObject.PhysicalObjectTemperatureController" target="World.WorldState.WeatherController.ObjectTemperatureController">
+              <point x="0.0" y="-25.5" />
+              <point x="1566.4655809648161" y="227.0" />
+              <point x="1226.0624999999995" y="227.0" />
+              <point x="143.9375" y="103.5" />
+            </edge>
+            <edge source="World.Chair" target="World.PhysicalObject">
+              <point x="-39.0" y="-36.5" />
+              <point x="588.083333333333" y="2536.0" />
+              <point x="577.7916666666665" y="2536.0" />
+              <point x="577.7916666666665" y="1772.0" />
+              <point x="959.3158252392402" y="1772.0" />
+              <point x="-86.31578947368416" y="114.5" />
+            </edge>
+            <edge source="World.Human" target="World.Food">
+              <point x="125.17647058823536" y="-147.5" />
+              <point x="2013.3748946903065" y="2586.0" />
+              <point x="3250.539948046258" y="2586.0" />
+              <point x="3250.539948046258" y="2297.0" />
+              <point x="3191.289948046258" y="2297.0" />
+              <point x="-25.25" y="59.0" />
+            </edge>
+            <edge source="World.WorldState.WeatherController.ObjectTemperatureController" target="World.PhysicalObject">
+              <point x="-143.9375" y="103.5" />
+              <point x="938.1874999999997" y="227.0" />
+              <point x="900.2916666666664" y="227.0" />
+              <point x="900.2916666666664" y="1223.0" />
+              <point x="861.1316147129244" y="1223.0" />
+              <point x="-184.5" y="-114.5" />
+            </edge>
+            <edge source="World.Furnace" target="World.WarmSource">
+              <point x="119.25" y="-92.5" />
+              <point x="370.16689675429006" y="2576.0" />
+              <point x="781.5416666666664" y="2576.0" />
+              <point x="-66.75" y="36.5" />
+            </edge>
+            <edge source="World.FireWood" target="World.Burning">
+              <point x="-50.333333333333485" y="-25.5" />
+              <point x="278.49999999999955" y="2297.0" />
+              <point x="270.33333333333303" y="2297.0" />
+              <point x="0.0" y="25.5" />
+            </edge>
+            <edge source="World.ChestBox.ChestBoxTemperatureController" target="World.ChestBox">
+              <point x="70.66666666666652" y="25.5" />
+              <point x="1304.1388623444075" y="3022.0" />
+              <point x="1258.9007671063125" y="3022.0" />
+              <point x="25.42857142857156" y="-70.0" />
+            </edge>
+            <edge source="World.Room.RoomTemperatureController" target="World.WarmSource">
+              <point x="72.75" y="-25.5" />
+              <point x="313.70684480054774" y="2931.0" />
+              <point x="826.0416666666664" y="2931.0" />
+              <point x="-22.25" y="36.5" />
+            </edge>
+            <edge source="World.Transferring" target="World.SearchKey">
+              <point x="-73.75" y="-47.5" />
+              <point x="898.7174975415033" y="1702.0" />
+              <point x="771.1316147129244" y="1702.0" />
+              <point x="0.0" y="69.5" />
+            </edge>
+            <edge source="World.Furniture" target="World.Container">
+              <point x="0.0" y="-25.5" />
+              <point x="663.7916666666665" y="2267.0" />
+              <point x="956.7749999999997" y="2267.0" />
+              <point x="-96.26666666666665" y="125.0" />
+            </edge>
+            <edge source="World.Chair" target="World.Furniture">
+              <point x="0.0" y="-36.5" />
+              <point x="627.083333333333" y="2566.0" />
+              <point x="651.208333333333" y="2566.0" />
+              <point x="-12.583333333333485" y="25.5" />
+            </edge>
+            <edge source="World.WorldState.TimeController" target="World.WorldState">
+              <point x="120.0" y="-169.0" />
+              <point x="1333.6874999999995" y="488.0" />
+              <point x="1444.7499999999995" y="488.0" />
+              <point x="1444.7499999999995" y="247.0" />
+              <point x="2458.796364802904" y="247.0" />
+              <point x="-13.25" y="14.5" />
+            </edge>
+            <edge source="World.PhysicalObject.PhysicalObjectTimeController" target="World.WorldState.TimeController.ObjectTimeController">
+              <point x="0.0" y="-14.5" />
+              <point x="1251.2499999999995" y="1127.0" />
+              <point x="1208.0499999999997" y="1127.0" />
+              <point x="65.80000000000018" y="103.0" />
+            </edge>
+            <edge source="World.ChestBox.ChestBoxTemperatureController" target="World.WarmSource">
+              <point x="-79.5" y="-25.5" />
+              <point x="1153.972195677741" y="2931.0" />
+              <point x="993.7916666666664" y="2931.0" />
+              <point x="993.7916666666664" y="2546.0" />
+              <point x="870.5416666666664" y="2546.0" />
+              <point x="22.25" y="36.5" />
+            </edge>
+            <edge source="World.Pan" target="World.Frying">
+              <point x="35.200000000000045" y="-36.5" />
+              <point x="2758.6166666666663" y="2287.0" />
+              <point x="2888.6666666666665" y="2287.0" />
+              <point x="-45.25" y="25.5" />
+            </edge>
+            <edge source="World.Food.FoodState" target="World.Food">
+              <point x="-8.416666666666742" y="58.5" />
+              <point x="3292.2999999999993" y="1772.0" />
+              <point x="3295.2166666666662" y="1772.0" />
+              <point x="3295.2166666666662" y="1907.0" />
+              <point x="3246.8399480462576" y="1907.0" />
+              <point x="30.299999999999955" y="-59.0" />
+            </edge>
+            <edge source="World.ChestBox.ChestBoxTemperatureController" target="World.Container">
+              <point x="-26.5" y="-25.5" />
+              <point x="1206.972195677741" y="2921.0" />
+              <point x="1004.7916666666664" y="2921.0" />
+              <point x="1004.7916666666664" y="2297.0" />
+              <point x="1028.975" y="2297.0" />
+              <point x="-24.066666666666606" y="125.0" />
+            </edge>
+            <edge source="World.Chair" target="World.Breaking">
+              <point x="78.0" y="-36.5" />
+              <point x="705.083333333333" y="2586.0" />
+              <point x="1490.9166666666665" y="2586.0" />
+              <point x="-65.0" y="25.5" />
+            </edge>
+            <edge source="World.ChestBox" target="World.Container">
+              <point x="50.85714285714266" y="-70.0" />
+              <point x="1284.3293385348836" y="3032.0" />
+              <point x="2624.916666666666" y="3032.0" />
+              <point x="2624.916666666666" y="2257.0" />
+              <point x="1173.375" y="2257.0" />
+              <point x="120.33333333333348" y="125.0" />
+            </edge>
+            <edge source="World.Human.InteractionTransfer" target="World.Container">
+              <point x="-164.0000000000001" y="-47.5" />
+              <point x="2204.416666666666" y="2267.0" />
+              <point x="1149.3083333333334" y="2267.0" />
+              <point x="96.26666666666688" y="125.0" />
+            </edge>
+            <edge source="World.Human" target="World.Human.Mood">
+              <point x="0.0" y="-147.5" />
+              <point x="1888.1984241020714" y="2506.0" />
+              <point x="1998.9166666666665" y="2506.0" />
+              <point x="0.0" y="59.5" />
+            </edge>
+            <edge source="World.Furnace.FurnaceTimeController" target="World.PhysicalObject.PhysicalObjectTimeController">
+              <point x="41.0" y="-25.5" />
+              <point x="173.75" y="2297.0" />
+              <point x="138.25" y="2297.0" />
+              <point x="138.25" y="1243.0" />
+              <point x="1172.4499999999998" y="1243.0" />
+              <point x="-78.79999999999995" y="14.5" />
+            </edge>
+            <edge source="World.Furnace" target="World.Container">
+              <point x="39.75" y="-92.5" />
+              <point x="290.66689675429006" y="2536.0" />
+              <point x="414.83333333333303" y="2536.0" />
+              <point x="414.83333333333303" y="2237.0" />
+              <point x="884.5749999999997" y="2237.0" />
+              <point x="-168.4666666666667" y="125.0" />
+            </edge>
+            <edge source="World.Room" target="World.Container">
+              <point x="30.199999999999818" y="-25.5" />
+              <point x="319.65684480054756" y="3032.0" />
+              <point x="519.083333333333" y="3032.0" />
+              <point x="519.083333333333" y="2257.0" />
+              <point x="932.7083333333331" y="2257.0" />
+              <point x="-120.33333333333326" y="125.0" />
+            </edge>
+            <edge source="World.Food" target="World.Food.FoodTimeController">
+              <point x="-50.49999999999994" y="-59.0" />
+              <point x="3166.039948046258" y="1917.0" />
+              <point x="3098.383333333333" y="1917.0" />
+              <point x="-52.33333333333334" y="25.5" />
+            </edge>
+            <edge source="World.Room.RoomTemperatureController" target="World.Container">
+              <point x="24.25" y="-25.5" />
+              <point x="265.20684480054774" y="2921.0" />
+              <point x="471.95833333333303" y="2921.0" />
+              <point x="471.95833333333303" y="2247.0" />
+              <point x="908.6416666666663" y="2247.0" />
+              <point x="-144.4000000000001" y="125.0" />
+            </edge>
+            <edge source="World.Container" target="World.PhysicalObject">
+              <point x="0.0" y="-125.0" />
+              <point x="1053.0416666666665" y="1927.0" />
+              <point x="1140.8424975415032" y="1927.0" />
+              <point x="1140.8424975415032" y="1762.0" />
+              <point x="1002.4737199760823" y="1762.0" />
+              <point x="-43.15789473684208" y="114.5" />
+            </edge>
+            <edge source="World.Human.Mood" target="World.Human">
+              <point x="69.0" y="59.5" />
+              <point x="2067.9166666666665" y="2516.0" />
+              <point x="1903.8454829256007" y="2516.0" />
+              <point x="15.647058823529278" y="-147.5" />
+            </edge>
+            <edge source="World.Human.InteractionTransfer" target="World.Human">
+              <point x="163.9999999999999" y="47.5" />
+              <point x="2532.416666666666" y="2546.0" />
+              <point x="1950.786659396189" y="2546.0" />
+              <point x="62.58823529411757" y="-147.5" />
+            </edge>
+            <edge source="World.Human" target="World.Human.InteractionTransfer">
+              <point x="46.94117647058829" y="-147.5" />
+              <point x="1935.1396005726597" y="2536.0" />
+              <point x="2368.4166666666665" y="2536.0" />
+              <point x="0.0" y="47.5" />
+            </edge>
+            <edge source="World.Food.FoodTimeController" target="World.WorldState.TimeController.ObjectTimeController">
+              <point x="0.0" y="-25.5" />
+              <point x="3150.7166666666662" y="1752.0" />
+              <point x="3130.0499999999997" y="1752.0" />
+              <point x="3130.0499999999997" y="1127.0" />
+              <point x="1273.8499999999995" y="1127.0" />
+              <point x="131.5999999999999" y="103.0" />
+            </edge>
+            <edge source="World.Egg" target="World.Food">
+              <point x="-37.875" y="-81.5" />
+              <point x="3271.9649480462576" y="2586.0" />
+              <point x="3261.539948046258" y="2586.0" />
+              <point x="3261.539948046258" y="2287.0" />
+              <point x="3241.789948046258" y="2287.0" />
+              <point x="25.25" y="59.0" />
+            </edge>
+            <edge source="World.WorldState.WeatherController.ObjectTemperatureController" target="World.WorldState.WeatherController">
+              <point x="102.8125" y="103.5" />
+              <point x="1184.9374999999995" y="237.0" />
+              <point x="1295.4999999999995" y="237.0" />
+              <point x="46.25" y="-37.0" />
+            </edge>
+            <edge source="World.Furnace" target="World.Furniture">
+              <point x="66.25" y="-92.5" />
+              <point x="317.16689675429006" y="2546.0" />
+              <point x="600.875" y="2546.0" />
+              <point x="-62.916666666666515" y="25.5" />
+            </edge>
+            <edge source="World.Chair" target="World.FireWood">
+              <point x="-78.0" y="-36.5" />
+              <point x="549.083333333333" y="2526.0" />
+              <point x="328.83333333333303" y="2526.0" />
+              <point x="0.0" y="25.5" />
+            </edge>
+            <edge source="World.ChestBox.ChestBoxTemperatureController" target="World.Human">
+              <point x="79.5" y="-25.5" />
+              <point x="1312.972195677741" y="2931.0" />
+              <point x="1888.1984241020714" y="2931.0" />
+              <point x="0.0" y="147.5" />
+            </edge>
+            <edge source="World.Human" target="World.Pan">
+              <point x="78.23529411764707" y="-147.5" />
+              <point x="1966.4337182197182" y="2556.0" />
+              <point x="2723.416666666666" y="2556.0" />
+              <point x="0.0" y="36.5" />
+            </edge>
+            <edge source="World.PhysicalObject.PhysicalObjectTimeController" target="World.PhysicalObject">
+              <point x="39.40000000000009" y="14.5" />
+              <point x="1290.6499999999996" y="1273.0" />
+              <point x="1107.1316147129244" y="1273.0" />
+              <point x="61.5" y="-114.5" />
+            </edge>
+            <edge source="World.Food.FoodTimeController" target="World.Food">
+              <point x="0.0" y="25.5" />
+              <point x="3150.7166666666662" y="1907.0" />
+              <point x="3186.239948046258" y="1907.0" />
+              <point x="-30.299999999999955" y="-59.0" />
+            </edge>
+            <edge source="World.ChestBox" target="World.PhysicalObject">
+              <point x="76.28571428571422" y="-70.0" />
+              <point x="1309.7579099634552" y="3042.0" />
+              <point x="3034.9166666666665" y="3042.0" />
+              <point x="3034.9166666666665" y="1642.0" />
+              <point x="1175.1052989234506" y="1642.0" />
+              <point x="129.47368421052624" y="114.5" />
+            </edge>
+            <edge source="World.WorldState.WeatherController" target="World.WorldState.WeatherController.ObjectTemperatureController">
+              <point x="-46.25" y="-37.0" />
+              <point x="1202.9999999999995" y="247.0" />
+              <point x="1143.8124999999995" y="247.0" />
+              <point x="61.6875" y="103.5" />
+            </edge>
+            <edge source="World.Food.FoodTimeController" target="World.PhysicalObject.PhysicalObjectTimeController">
+              <point x="-52.33333333333326" y="-25.5" />
+              <point x="3098.383333333333" y="1612.0" />
+              <point x="2804.4630314695705" y="1612.0" />
+              <point x="2804.4630314695705" y="1273.0" />
+              <point x="1330.0499999999997" y="1273.0" />
+              <point x="78.79999999999995" y="14.5" />
+            </edge>
+            <edge source="World.Furnace" target="World.Burning">
+              <point x="13.25" y="-92.5" />
+              <point x="264.16689675429006" y="2586.0" />
+              <point x="242.83333333333303" y="2586.0" />
+              <point x="242.83333333333303" y="2297.0" />
+              <point x="206.66666666666652" y="2297.0" />
+              <point x="-63.666666666666515" y="25.5" />
+            </edge>
+            <edge source="World.Human" target="World.Food.FoodState">
+              <point x="109.52941176470586" y="-147.5" />
+              <point x="1997.7278358667772" y="2576.0" />
+              <point x="2832.9166666666665" y="2576.0" />
+              <point x="2832.9166666666665" y="1762.0" />
+              <point x="3258.633333333333" y="1762.0" />
+              <point x="-42.08333333333326" y="58.5" />
+            </edge>
+            <edge source="World.Food.FoodTimeController" target="World.Food.FoodState">
+              <point x="52.333333333333314" y="-25.5" />
+              <point x="3203.0499999999993" y="1772.0" />
+              <point x="3275.4666666666662" y="1772.0" />
+              <point x="-25.25" y="58.5" />
+            </edge>
+            <edge source="World.Burning" target="World.PhysicalObject">
+              <point x="0.0" y="-25.5" />
+              <point x="270.33333333333303" y="1742.0" />
+              <point x="894.5789831339771" y="1742.0" />
+              <point x="-151.05263157894728" y="114.5" />
+            </edge>
+            <edge source="World.FireWood" target="World.PhysicalObject">
+              <point x="50.333333333333485" y="-25.5" />
+              <point x="379.1666666666665" y="2297.0" />
+              <point x="387.33333333333303" y="2297.0" />
+              <point x="387.33333333333303" y="1762.0" />
+              <point x="937.7368778708192" y="1762.0" />
+              <point x="-107.8947368421052" y="114.5" />
+            </edge>
+            <edge source="World.Food" target="World.PhysicalObject">
+              <point x="-70.69999999999982" y="-59.0" />
+              <point x="3145.839948046258" y="1927.0" />
+              <point x="3061.7166666666662" y="1927.0" />
+              <point x="3061.7166666666662" y="1622.0" />
+              <point x="1218.2631936602927" y="1622.0" />
+              <point x="172.63157894736833" y="114.5" />
+            </edge>
+            <edge source="World.Room.RoomTemperatureController" target="World.Room">
+              <point x="48.5" y="25.5" />
+              <point x="0.0" y="-25.5" />
+            </edge>
+            <edge source="World.Container" target="World.Transferring">
+              <point x="-72.20000000000005" y="-125.0" />
+              <point x="980.8416666666664" y="1937.0" />
+              <point x="972.4674975415033" y="1937.0" />
+              <point x="0.0" y="47.5" />
+            </edge>
+            <edge source="World.Egg" target="World.Frying">
+              <point x="-63.125" y="-81.5" />
+              <point x="3246.7149480462576" y="2456.0" />
+              <point x="2979.1666666666665" y="2456.0" />
+              <point x="45.25" y="25.5" />
+            </edge>
+            <edge source="World.Furnace" target="World.Furnace.FurnaceTimeController">
+              <point x="-66.25" y="-92.5" />
+              <point x="184.66689675429006" y="2566.0" />
+              <point x="112.25" y="2566.0" />
+              <point x="-20.5" y="25.5" />
+            </edge>
+            <edge source="World.PhysicalObject" target="World.PhysicalObject.PhysicalObjectTimeController">
+              <point x="-20.5" y="-114.5" />
+              <point x="1025.1316147129244" y="1253.0" />
+              <point x="1211.8499999999995" y="1253.0" />
+              <point x="-39.40000000000009" y="14.5" />
+            </edge>
+            <edge source="World.Furnace.FurnaceTimeController" target="World.Furnace">
+              <point x="61.5" y="25.5" />
+              <point x="194.25" y="2546.0" />
+              <point x="237.66689675429006" y="2546.0" />
+              <point x="-13.25" y="-92.5" />
+            </edge>
+            <edge source="World.WorldState.WeatherController.ObjectTemperatureController" target="World.WorldState.TimeController.ObjectTimeController">
+              <point x="-61.6875" y="103.5" />
+              <point x="1020.4374999999997" y="247.0" />
+              <point x="935.7499999999997" y="247.0" />
+              <point x="935.7499999999997" y="876.0" />
+              <point x="1005.1666666666662" y="876.0" />
+              <point x="-137.08333333333348" y="-103.0" />
+            </edge>
+            <edge source="World.Pan" target="World.Container">
+              <point x="-35.200000000000045" y="-36.5" />
+              <point x="2688.2166666666662" y="2237.0" />
+              <point x="1221.5083333333332" y="2237.0" />
+              <point x="168.4666666666667" y="125.0" />
+            </edge>
+            <edge source="World.Egg" target="World.Breaking">
+              <point x="-88.375" y="-81.5" />
+              <point x="3221.4649480462576" y="2466.0" />
+              <point x="1620.9166666666665" y="2466.0" />
+              <point x="65.0" y="25.5" />
+            </edge>
+            <edge source="World.WorldState.TimeController" target="World.WorldState.TimeController.ObjectTimeController">
+              <point x="24.0" y="169.0" />
+              <point x="1237.6874999999995" y="876.0" />
+              <point x="1279.333333333333" y="876.0" />
+              <point x="137.08333333333348" y="-103.0" />
+            </edge>
+            <edge source="World.ChestBox.ChestBoxTemperatureController" target="World.PhysicalObject.PhysicalObjectTemperatureController">
+              <point x="26.5" y="-25.5" />
+              <point x="1259.972195677741" y="2921.0" />
+              <point x="1447.9166666666665" y="2921.0" />
+              <point x="1447.9166666666665" y="1323.0" />
+              <point x="1625.9655809648161" y="1323.0" />
+              <point x="59.5" y="25.5" />
+            </edge>
+            <edge source="World.Pan" target="World.PhysicalObject">
+              <point x="0.0" y="-36.5" />
+              <point x="2723.416666666666" y="1672.0" />
+              <point x="1110.3684568181877" y="1672.0" />
+              <point x="64.73684210526335" y="114.5" />
+            </edge>
+            <edge source="World.Room" target="World.Room.RoomTemperatureController">
+              <point x="-30.199999999999818" y="-25.5" />
+              <point x="259.2568448005479" y="3032.0" />
+              <point x="192.45684480054774" y="3032.0" />
+              <point x="-48.5" y="25.5" />
+            </edge>
+            <edge source="World.Human.InteractionTransfer" target="World.SearchKey">
+              <point x="-1.1368683772161603E-13" y="-47.5" />
+              <point x="2368.416666666666" y="2297.0" />
+              <point x="2432.257247631483" y="2297.0" />
+              <point x="2432.257247631483" y="1692.0" />
+              <point x="804.1316147129244" y="1692.0" />
+              <point x="33.0" y="69.5" />
+            </edge>
+            <edge source="World.PhysicalObject" target="World.PhysicalObject.PhysicalObjectTemperatureController">
+              <point x="102.5" y="-114.5" />
+              <point x="1148.1316147129244" y="1293.0" />
+              <point x="1506.9655809648161" y="1293.0" />
+              <point x="-59.5" y="25.5" />
+            </edge>
+            <edge source="World.WorldState.WeatherController.ObjectTemperatureController" target="World.WorldState.TimeController">
+              <point x="-20.5625" y="103.5" />
+              <point x="1061.5624999999995" y="247.0" />
+              <point x="1053.7499999999995" y="247.0" />
+              <point x="1053.7499999999995" y="448.0" />
+              <point x="1237.6874999999995" y="448.0" />
+              <point x="24.0" y="-169.0" />
+            </edge>
+            <edge source="World.Kitchen" target="World.Room">
+              <point x="-37.75" y="-25.5" />
+              <point x="-37.75" y="25.5" />
+            </edge>
+            <edge source="World.Human" target="World.Human.HumanTemperatureController">
+              <point x="-62.588235294117794" y="-147.5" />
+              <point x="1825.6101888079534" y="2496.0" />
+              <point x="1707.9166666666665" y="2496.0" />
+              <point x="-67.0" y="25.5" />
+            </edge>
+            <edge source="World.WorldState.TimeController.TimeState" target="World.WorldState.TimeController">
+              <point x="36.375" y="80.5" />
+              <point x="1031.1249999999995" y="458.0" />
+              <point x="1189.6874999999995" y="458.0" />
+              <point x="-24.0" y="-169.0" />
+            </edge>
+            <edge source="World.WorldState.TimeController.ObjectTimeController" target="World.WorldState.TimeController">
+              <point x="27.416666666666742" y="-103.0" />
+              <point x="1169.6666666666665" y="876.0" />
+              <point x="1141.6874999999995" y="876.0" />
+              <point x="-72.0" y="169.0" />
+            </edge>
+            <edge source="World.Human" target="World.WarmSource">
+              <point x="-125.17647058823536" y="-147.5" />
+              <point x="1763.0219535138358" y="2536.0" />
+              <point x="915.0416666666664" y="2536.0" />
+              <point x="66.75" y="36.5" />
+            </edge>
+            <edge source="World.WorldState.WeatherController" target="World.WorldState">
+              <point x="138.75" y="-37.0" />
+              <point x="1387.9999999999995" y="237.0" />
+              <point x="2432.296364802904" y="237.0" />
+              <point x="-39.75" y="14.5" />
+            </edge>
+            <edge source="World.Egg" target="World.WorldState">
+              <point x="88.375" y="-81.5" />
+              <point x="3398.2149480462576" y="2586.0" />
+              <point x="3410.5166666666664" y="2586.0" />
+              <point x="3410.5166666666664" y="237.0" />
+              <point x="2511.796364802904" y="237.0" />
+              <point x="39.75" y="14.5" />
+            </edge>
+            <edge source="World.Trousers" target="World.Container">
+              <point x="-37.75" y="-25.5" />
+              <point x="0.0" y="125.0" />
+            </edge>
+            <edge source="World.Frying" target="World.PhysicalObject">
+              <point x="0.0" y="-25.5" />
+              <point x="2933.9166666666665" y="1652.0" />
+              <point x="1153.5263515550294" y="1652.0" />
+              <point x="107.89473684210498" y="114.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="220.0" y="1306.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Furnace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Frying.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Human.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="55" column="25" lean-forward="true" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+          <folding>
+            <element signature="class#InteractionTransfer#0;class#Human#0" />
+            <element signature="method#putContentObjectTo#0;class#InteractionTransfer#0;class#Human#0" />
+            <element signature="method#breakContent#0;class#Human#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Taller/Lab4Taller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="89" column="14" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#116#117#0" expanded="true" />
+            <element signature="e#158#159#0" expanded="true" />
+            <element signature="e#191#192#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/World/ChestBox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        <state relative-caret-position="159">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/SearchKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Transferring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Trousers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
           <folding>
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1244#1245#0" expanded="true" />
+            <element signature="e#105#106#0" expanded="true" />
+            <element signature="e#147#148#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/WarmSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Kitchen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+          <folding>
+            <element signature="e#73#74#0" expanded="true" />
+            <element signature="e#115#116#0" expanded="true" />
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/WorldState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="41" column="66" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
+          <folding>
+            <element signature="e#1295#1296#0" expanded="true" />
+            <element signature="e#1348#1349#0" expanded="true" />
+            <element signature="initializer##0;class#TimeController#0;class#WorldState#0" />
+            <element signature="class#TimeState#0;class#TimeController#0;class#WorldState#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+          <folding>
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
           </folding>
         </state>
       </provider>

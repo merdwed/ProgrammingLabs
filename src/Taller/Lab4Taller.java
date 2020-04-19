@@ -3,7 +3,7 @@ package Taller;
 import World.*;
 
 public class Lab4Taller extends StoryTaller{
-    final int numberOfEgg = 21;
+    final int numberOfEgg = 7;
     private static Lab4Taller ourInstance = new Lab4Taller();
 
     public static Lab4Taller getInstance() {
@@ -88,7 +88,6 @@ public class Lab4Taller extends StoryTaller{
             spruts.eatContent();
         }
         //test
-        //WorldState.TimeController.setTimeState(WorldState.TimeController.TimeState.NIGHT);
         WorldState.TimeController.addToGlobalTime(13);
         WorldState.TimeController.addToGlobalTime(500);
         //let's sleep

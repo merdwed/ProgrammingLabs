@@ -39,11 +39,11 @@ public class Human extends Container implements WarmSource {
         public int getHappinessRate(){return happinessRate;}
         private void setHappinessRate(int happyArg){
             if(happinessRate > happyArg)
-                System.out.print(Human.this.toString() + " has more upset");
+                System.out.print(Human.this.toString() + " has more upset.");
             if(happinessRate < happyArg)
-                System.out.print(Human.this.toString() + " has more happy");
+                System.out.print(Human.this.toString() + " has more happy.");
             happinessRate=happyArg;
-            System.out.println("rate of happiness: " + happinessRate);
+            System.out.println(" rate of happiness: " + happinessRate);
         }
         public void someBadSituation(){
             setHappinessRate(getHappinessRate() - 1);
@@ -122,7 +122,7 @@ public class Human extends Container implements WarmSource {
         return b;
     }
     public boolean cookContent(Class dishClass){
-        PhysicalObject obj=find(dishClass,SearchKey.FIRST);
+        PhysicalObject obj=find(dishClass);
         if(obj instanceof Pan){
             return ((Pan) obj).fryContent();
         }

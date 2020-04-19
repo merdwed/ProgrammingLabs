@@ -26,7 +26,7 @@ public class ChestBox extends Furniture {
     protected class ChestBoxTemperatureController extends PhysicalObjectTemperatureController{
         @Override
         protected void updateThis(float temp){
-            WarmSource obj=(Human)find(Human.class,SearchKey.FIRST);
+            WarmSource obj=(Human)find(Human.class);
             if( closingState == true && obj != null && obj.isActive()){
                 temp=(obj.getSourceTemperature());
             }

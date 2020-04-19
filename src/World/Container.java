@@ -81,6 +81,9 @@ public abstract class Container extends PhysicalObject implements Transferring {
         }
         return null;
     }
+    protected PhysicalObject find(Class classObject){
+        return find(classObject,SearchKey.FIRST);
+    }
     public PhysicalObject findAndGet(PhysicalObject pObject) {
         PhysicalObject returnObject=find(pObject);
         if(returnObject!=null)
@@ -93,7 +96,9 @@ public abstract class Container extends PhysicalObject implements Transferring {
             content.remove(returnObject);
         return returnObject;
     }
-
+    public PhysicalObject findAndGet(Class classObject){
+        return findAndGet(classObject,SearchKey.FIRST);
+    }
 
     @Override
     public String toString(){
