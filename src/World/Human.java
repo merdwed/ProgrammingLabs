@@ -1,6 +1,6 @@
 package World;
 
-public class Human extends Container {
+public class Human extends Container implements WarmSource {
     public Human() {
         this(new float[]{0, 0, 0});
     }
@@ -12,14 +12,38 @@ public class Human extends Container {
     public Human(float[] exDim, String namearg) {
         super(exDim);
         this.name=namearg;
-        this.hunger=defaultHunger;
-        this.happinessRate = defaultHappy;
+        this.hunger=DEFAULT_HUNGER;
+        this.happinessRate = DEFAULT_HAPPY;
+        objectTemperatureController=new HumanTemperatureController();
+        objectTemperatureController.needToUpdateObjects=content;
     }
-    public final int defaultHunger = 65;
-    public final int defaultHappy = 10;
+
+    protected class HumanTemperatureController extends PhysicalObjectTemperatureController{
+        @Override
+        protected void updateThis(float temp){
+            if(temp<COLD__TEMPERATURE) {
+                System.out.println(Human.this.toString() + " feel cold");
+                someBadSituation();
+            }
+            super.updateThis(DEFAULT_HUMAN_TEMPERATURE);
+        }
+    }
+
+    private final int DEFAULT_HUNGER = 65;
+    private final int DEFAULT_HAPPY = 10;
+    private final float DEFAULT_HUMAN_TEMPERATURE=20f;
+    private final float COLD__TEMPERATURE = 10f;
     private String name;
     private int hunger;
     private int happinessRate;
+    @Override
+    public boolean isActive(){
+        return true;
+    }
+    @Override
+    public float getSourceTemperature(){
+        return DEFAULT_HUMAN_TEMPERATURE;
+    }
     public boolean searchAndTake(Container container, Class classObject, SearchKey key){
         System.out.println(this.toString() + " starts searching " +classObject.toString() + " in " + container.toString());
         PhysicalObject obj=container.findAndGet(classObject,key);

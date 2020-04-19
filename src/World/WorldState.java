@@ -6,21 +6,54 @@ public class WorldState {
 
     public static class WeatherController {
 
-        final static float DEFAULT_TEMPERATURE = 15f;
-        private WeatherController(){
-            temperature = DEFAULT_TEMPERATURE;
-        }
-        private static float temperature;
+        //private WeatherController(){        }
 
-        public static float getTemperature() {
-            return temperature;
+
+        public static class ObjectTemperatureController{
+
+            public ObjectTemperatureController(){
+                temperature=DEFAULT_TEMPERATURE;
+                needToUpdateObjects=new ArrayList<PhysicalObject>();
+            }
+
+            private final float DEFAULT_TEMPERATURE = 15f;
+            private float temperature;
+            protected ArrayList<PhysicalObject> needToUpdateObjects;
+
+            public void setTemperature(float temp){temperature=temp;}
+            public float getTemperature() {
+                return temperature;
+            }
+
+            final protected void updateContent(float temp) {
+                if (needToUpdateObjects != null) {
+                    for (int i = 0; i < needToUpdateObjects.size(); i++) {
+                        needToUpdateObjects.get(i).objectTemperatureController.updateThis(temp);
+                        needToUpdateObjects.get(i).objectTemperatureController.updateContent(needToUpdateObjects.get(i).objectTemperatureController.getTemperature());
+                    }
+                }
+            }
+            protected void updateThis(float temp){
+                this.temperature=temp;
+            }
+            final protected void updateThis() {
+                temperature = temperatureVersusTime(TimeController.ObjectTimeController.getDayTime());
+            }
+            private static float temperatureVersusTime(long time){
+                return (- time*time*time/1600f +  time*time - 150f *time)/17280f-3f;//this mathematical function imitate temperature versus time for 0<=t<1440
+            }
+            public void addToListOfUpdatableObjects(PhysicalObject obj){
+                needToUpdateObjects.add(obj);
+            }
         }
+        public static ObjectTemperatureController objectTemperatureController=new ObjectTemperatureController();
         public static void updateWeather(){
-            temperature=temperatureVersusTime(TimeController.ObjectTimeController.getDayTime());
+
+            objectTemperatureController.updateThis();
+            objectTemperatureController.updateContent(objectTemperatureController.getTemperature());
+
         }
-        private static float temperatureVersusTime(long time){
-            return (- time*time*time/1600 +  time*time - 150 *time)/17280-3;//this mathematical function imitate temperature versus time for 0<=t<1440
-        }
+
     }
 
     public static class TimeController{
@@ -61,6 +94,7 @@ public class WorldState {
                     for (int i = 0; i < needToUpdateObjects.size(); i++) {
                         needToUpdateObjects.get(i).objectTimeController.updateThis();
                         needToUpdateObjects.get(i).objectTimeController.updateContent();
+
                     }
                 }
             }
@@ -98,8 +132,9 @@ public class WorldState {
             if(dayTime>=EVENING_VAL    ||  dayTime<MIDNIGHT_VAL)  timeState=TimeState.EVENING;
             System.out.println("Global time: " + globalTime);
             System.out.println("Day time: " + dayTime + " of " + FULL_DAY_LENGTH + ". Now is " +timeState.toString());
-            //Weather.updateWeather();
             objectTimeController.updateContent();
+            WeatherController.updateWeather();
+
         }
 
         public static void setDayTime(long t) throws Exceptions.TimeParadoxException{

@@ -21,11 +21,17 @@ public class Lab4Taller extends StoryTaller{
         actionRoom.put(new Chair(new float[]{0.8f,0.5f,0.5f}));
         actionRoom.put(new Pan(new float[]{0.3f,0.3f,0.1f}));
         actionRoom.put(new Pan(new float[]{0.4f,0.35f,0.2f}));
+        actionRoom.put(new ChestBox(new float[]{2f,0.8f,0.5f},new float[]{1.95f,0.75f,0.45f}));
+        actionRoom.put(new ChestBox(new float[]{1.8f,0.8f,0.5f},new float[]{1.75f,0.75f,0.45f}));
+        actionRoom.put(furnace);
         for(int i=0;i<numberOfEgg;i++) {
             actionRoom.put(new Egg());
         }
         spruts.put(new Trousers());
+
+        WorldState.WeatherController.objectTemperatureController.addToListOfUpdatableObjects(actionRoom);
         WorldState.TimeController.objectTimeController.addToListOfUpdatableObjects(actionRoom);
+
     }
 
     public void storyActions(){
@@ -82,10 +88,21 @@ public class Lab4Taller extends StoryTaller{
             spruts.eatContent();
         }
         //test
-        WorldState.TimeController.setTimeState(WorldState.TimeController.TimeState.NIGHT);
-        WorldState.TimeController.addToGlobalTime(6000000);
-        System.out.println("huy");
-        WorldState.TimeController.addToGlobalTime(-1);
-        System.out.println("huy");
+        //WorldState.TimeController.setTimeState(WorldState.TimeController.TimeState.NIGHT);
+        WorldState.TimeController.addToGlobalTime(13);
+        WorldState.TimeController.addToGlobalTime(500);
+        //let's sleep
+        {
+            ChestBox box=(ChestBox)actionRoom.findAndGet(ChestBox.class,SearchKey.MAX);
+            box.put(spruts);
+            box.closeCap();
+            actionRoom.put(box);
+            box=(ChestBox)actionRoom.findAndGet(ChestBox.class,SearchKey.FIRST);
+            box.put(julio);
+            actionRoom.put(box);
+            WorldState.TimeController.setTimeState(WorldState.TimeController.TimeState.MIDNIGHT);
+        }
+
     }
+
 }

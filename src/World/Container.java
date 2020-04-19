@@ -17,6 +17,7 @@ public abstract class Container extends PhysicalObject implements Transferring {
     public Container(float[] exDim, float[] inDim) {
         super(exDim, inDim);
         content = new ArrayList<PhysicalObject>();
+        objectTemperatureController.needToUpdateObjects=content;
         objectTimeController.needToUpdateObjects=content;
     }
 

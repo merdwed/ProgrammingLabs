@@ -26,15 +26,22 @@ public abstract class PhysicalObject {
             System.out.println("object " + this.toString() + " cannot was created with negative dimensions. It was created with dimensions {0,0,0}");
         }
         objectTimeController=new PhysicalObjectTimeController();
+        objectTemperatureController=new PhysicalObjectTemperatureController();
         objectTimeController.needToUpdateObjects=null;
+        objectTemperatureController.needToUpdateObjects=null;
     }
 
     protected class PhysicalObjectTimeController extends WorldState.TimeController.ObjectTimeController{
-        @Override
-        protected void updateThis(){ }
+
     }
-
-
+    protected class PhysicalObjectTemperatureController extends WorldState.WeatherController.ObjectTemperatureController{
+        @Override
+        protected void updateThis(float temp){
+            super.updateThis(temp);
+            System.out.println(PhysicalObject.this.toString() + "'s temperature was updated. " + temp);
+        }
+    }
+    protected PhysicalObjectTemperatureController objectTemperatureController;
     protected PhysicalObjectTimeController objectTimeController;
     private float[] externalDimensions;
     private float[] internalDimensions;
