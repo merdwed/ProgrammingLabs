@@ -36,33 +36,33 @@ public class Lab3Taller extends StoryTaller{
         actionRoom.put(spruts);
 
         //2
-        spruts.searchAndTake(actionRoom,Chair.class,SearchKey.FIRST);
-        spruts.searchAndTake(actionRoom,Chair.class,SearchKey.FIRST);
+        spruts.interactionTransfer.searchAndTake(actionRoom,Chair.class,SearchKey.FIRST);
+        spruts.interactionTransfer.searchAndTake(actionRoom,Chair.class,SearchKey.FIRST);
         spruts.breakContent();
         //3
-        spruts.putContentObjectTo(FireWood.class,furnace, SearchKey.FIRST);
-        spruts.putContentObjectTo(FireWood.class,furnace,SearchKey.FIRST);
+        spruts.interactionTransfer.putContentObjectTo(FireWood.class,furnace, SearchKey.FIRST);
+        spruts.interactionTransfer.putContentObjectTo(FireWood.class,furnace,SearchKey.FIRST);
         furnace.burnContent();
         //4
-        spruts.searchAndTake(actionRoom,Egg.class,SearchKey.FIRST);
-        spruts.searchAndTake(actionRoom,Egg.class,SearchKey.FIRST);
+        spruts.interactionTransfer.searchAndTake(actionRoom,Egg.class,SearchKey.FIRST);
+        spruts.interactionTransfer.searchAndTake(actionRoom,Egg.class,SearchKey.FIRST);
         spruts.breakContent();
         //5
         System.out.println("Spruts can put egg to pan, but");
         //6
-        spruts.putContentObjectToContentContainer(Egg.class,Trousers.class, SearchKey.FIRST, SearchKey.FIRST);
+        spruts.interactionTransfer.putContentObjectToContentContainer(Egg.class,Trousers.class, SearchKey.FIRST, SearchKey.FIRST);
         //7
-        spruts.someBadSituation();
-        julio.someBadSituation();
+        spruts.mood.someBadSituation();
+        julio.mood.someBadSituation();
         //8
-        while(julio.searchAndTake(spruts,Egg.class,SearchKey.FIRST)==true);
-        while(julio.searchAndTake(actionRoom,Egg.class,SearchKey.FIRST)==true);
+        while(julio.interactionTransfer.searchAndTake(spruts,Egg.class,SearchKey.FIRST)==true);
+        while(julio.interactionTransfer.searchAndTake(actionRoom,Egg.class,SearchKey.FIRST)==true);
         //9
         System.out.println("Julio are starting gotovit");
         //10
-        julio.searchAndTake(actionRoom,Pan.class,SearchKey.MAX);
+        julio.interactionTransfer.searchAndTake(actionRoom,Pan.class,SearchKey.MAX);
         //11
-        while(julio.putContentObjectToContentContainer(Egg.class, Pan.class,SearchKey.FIRST,SearchKey.FIRST)==true);
+        while(julio.interactionTransfer.putContentObjectToContentContainer(Egg.class, Pan.class,SearchKey.FIRST,SearchKey.FIRST)==true);
         julio.cookContent(Pan.class);
         //12
         {
@@ -76,7 +76,7 @@ public class Lab3Taller extends StoryTaller{
         //13
         {
             Pan tempPan=(Pan)julio.findAndGet(Pan.class,SearchKey.FIRST);
-            while(julio.searchAndTake(tempPan,Egg.class,SearchKey.FIRST) && spruts.searchAndTake(tempPan,Egg.class,SearchKey.FIRST));
+            while(julio.interactionTransfer.searchAndTake(tempPan,Egg.class,SearchKey.FIRST) && spruts.interactionTransfer.searchAndTake(tempPan,Egg.class,SearchKey.FIRST));
             actionRoom.put(tempPan);
             julio.eatContent();
             spruts.eatContent();

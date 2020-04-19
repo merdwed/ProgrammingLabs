@@ -13,7 +13,8 @@ public class Human extends Container implements WarmSource {
         super(exDim);
         this.name=namearg;
         this.hunger=DEFAULT_HUNGER;
-        this.happinessRate = DEFAULT_HAPPY;
+        mood=new Mood();
+        interactionTransfer = new InteractionTransfer();
         objectTemperatureController=new HumanTemperatureController();
         objectTemperatureController.needToUpdateObjects=content;
     }
@@ -23,19 +24,72 @@ public class Human extends Container implements WarmSource {
         protected void updateThis(float temp){
             if(temp<COLD__TEMPERATURE) {
                 System.out.println(Human.this.toString() + " feel cold");
-                someBadSituation();
+                mood.someBadSituation();
             }
             super.updateThis(DEFAULT_HUMAN_TEMPERATURE);
         }
     }
 
+    public class Mood{
+        public Mood(){
+            happinessRate=DEFAULT_HAPPY;
+        }
+        private final int DEFAULT_HAPPY = 10;
+        private int happinessRate;
+        public int getHappinessRate(){return happinessRate;}
+        private void setHappinessRate(int happyArg){
+            if(happinessRate > happyArg)
+                System.out.print(Human.this.toString() + " has more upset");
+            if(happinessRate < happyArg)
+                System.out.print(Human.this.toString() + " has more happy");
+            happinessRate=happyArg;
+            System.out.println("rate of happiness: " + happinessRate);
+        }
+        public void someBadSituation(){
+            setHappinessRate(getHappinessRate() - 1);
+        }
+        public void someHappySituation(){
+
+            setHappinessRate(getHappinessRate() + 1);
+        }
+    }
+    public class InteractionTransfer{
+        public boolean searchAndTake(Container container, Class classObject, SearchKey key){
+            System.out.println(Human.this.toString() + " starts searching " +classObject.toString() + " in " + container.toString());
+            PhysicalObject obj=container.findAndGet(classObject,key);
+            if(obj == null)
+                return false;
+            Human.this.put(obj);
+            return true;
+
+        }
+        public boolean putContentObjectTo( Class what, Container where, SearchKey key){
+            System.out.println(Human.this.toString() + " try to put " + what.toString() + " to " + where.toString());
+            PhysicalObject obj=Human.this.findAndGet(what,key);
+            if( obj == null)
+                return false;
+            where.put(obj);
+            return true;
+        }
+        public boolean putContentObjectToContentContainer( Class what, Class where, SearchKey whatKey, SearchKey whereKey){
+            System.out.println(Human.this.toString() + " try to put " + what.toString() + " to " + where.toString());
+            PhysicalObject whereObject=find(where, whereKey);
+            PhysicalObject whatObject=findAndGet(what, whatKey);
+            if(whereObject!= null && whatObject!=null && whereObject instanceof Container) {
+                ((Container) whereObject).put(whatObject);
+                return true;
+            }
+            return false;
+        }
+    }
     private final int DEFAULT_HUNGER = 65;
-    private final int DEFAULT_HAPPY = 10;
     private final float DEFAULT_HUMAN_TEMPERATURE=20f;
     private final float COLD__TEMPERATURE = 10f;
+    public Mood mood;
+    public InteractionTransfer interactionTransfer;
     private String name;
     private int hunger;
-    private int happinessRate;
+
     @Override
     public boolean isActive(){
         return true;
@@ -44,33 +98,7 @@ public class Human extends Container implements WarmSource {
     public float getSourceTemperature(){
         return DEFAULT_HUMAN_TEMPERATURE;
     }
-    public boolean searchAndTake(Container container, Class classObject, SearchKey key){
-        System.out.println(this.toString() + " starts searching " +classObject.toString() + " in " + container.toString());
-        PhysicalObject obj=container.findAndGet(classObject,key);
-        if(obj == null)
-            return false;
-        this.put(obj);
-        return true;
 
-    }
-    public boolean putContentObjectTo( Class what, Container where, SearchKey key){
-        System.out.println(this.toString() + " try to put " + what.toString() + " to " + where.toString());
-        PhysicalObject obj=this.findAndGet(what,key);
-        if( obj == null)
-            return false;
-        where.put(obj);
-        return true;
-    }
-    public boolean putContentObjectToContentContainer( Class what, Class where, SearchKey whatKey, SearchKey whereKey){
-        System.out.println(this.toString() + " try to put " + what.toString() + " to " + where.toString());
-        PhysicalObject whereObject=find(where, whereKey);
-        PhysicalObject whatObject=findAndGet(what, whatKey);
-        if(whereObject!= null && whatObject!=null && whereObject instanceof Container) {
-            ((Container) whereObject).put(whatObject);
-            return true;
-        }
-        return false;
-    }
     public boolean breakContent(){
         boolean b=false;
         for(int i=0;i<content.size();){
@@ -111,14 +139,14 @@ public class Human extends Container implements WarmSource {
                         if(hunger>0) {
                             hunger -= 5;
 
-                            someHappySituation();
+                            mood.someHappySituation();
                         }
                         else
-                            someBadSituation();
+                            mood.someBadSituation();
                         content.remove(i);
                         break;
                     default:
-                        someBadSituation();
+                        mood.someBadSituation();
                         content.remove(i);
                         break;
 
@@ -133,15 +161,7 @@ public class Human extends Container implements WarmSource {
     public int getHungerPercentRate(){
         return hunger;
     }
-    public int getHappinessRate(){return happinessRate;}
-    public void someBadSituation(){
-        System.out.println(toString() + " has more upset");
-        happinessRate -=1;
-    }
-    public void someHappySituation(){
-        System.out.println(toString() + " has more happy");
-        happinessRate +=1;
-    }
+
 
     @Override
     public String toString(){
