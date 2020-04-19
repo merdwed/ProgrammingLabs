@@ -26,7 +26,7 @@ public abstract class Food extends PhysicalObject {
         @Override
         protected void updateThis(){
 
-            System.out.println("update in Food " + Food.this.toString());
+
             if(FoodTimeController.getGlobalTime() - createdTime > shelfLife){
                 foodState=FoodState.SPOILED;
                 System.out.println(Food.this.toString() + " is " + foodState.toString());
@@ -37,7 +37,7 @@ public abstract class Food extends PhysicalObject {
     enum FoodState { COOKED, RAW, COAL, SPOILED}
     protected long shelfLife;
     protected FoodState foodState;
-    private final int DEFAULT_SHELF_LIFE = 1440*365*10;
+    private final long DEFAULT_SHELF_LIFE = WorldState.TimeController.FULL_DAY_LENGTH*365*10;
 
     @Override
     public String toString(){

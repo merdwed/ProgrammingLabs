@@ -1,4 +1,4 @@
-import Taller.Lab3Taller;
+import Taller.*;
 
 public class Main {
 
@@ -6,6 +6,6 @@ public class Main {
 
 
         System.out.println("Hello World!");
-        Lab3Taller.getInstance().storyActions();
+        Lab4Taller.getInstance().storyActions();
     }
 }

@@ -19,7 +19,7 @@ public abstract class Container extends PhysicalObject implements Transferring {
         content = new ArrayList<PhysicalObject>();
         objectTimeController.needToUpdateObjects=content;
     }
-    //final static int defaultDepth = 5;
+
     //field
     protected ArrayList<PhysicalObject> content;
 

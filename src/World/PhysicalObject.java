@@ -1,7 +1,9 @@
 package World;
 
-import java.util.Arrays;
+import Exceptions.NegativeDimensionsException;
 
+import java.util.Arrays;
+//import Exceptions.NegativeDimensionsException;
 
 public abstract class PhysicalObject {
 
@@ -15,16 +17,21 @@ public abstract class PhysicalObject {
 
     public PhysicalObject(float[] exDim, float[] inDim) {
         initDimensions();
-        setExternalDimensions(exDim);
-        setInternalDimensions(inDim);
+        try {
+            setExternalDimensions(exDim);
+            setInternalDimensions(inDim);
+        }
+        catch(NegativeDimensionsException e){
+            System.err.println(e.getMessage());
+            System.out.println("object " + this.toString() + " cannot was created with negative dimensions. It was created with dimensions {0,0,0}");
+        }
         objectTimeController=new PhysicalObjectTimeController();
         objectTimeController.needToUpdateObjects=null;
     }
+
     protected class PhysicalObjectTimeController extends WorldState.TimeController.ObjectTimeController{
         @Override
-        protected void updateThis(){
-            System.out.println("update in PhysicalObject " + PhysicalObject.this.toString());
-        }
+        protected void updateThis(){ }
     }
 
 
@@ -38,7 +45,9 @@ public abstract class PhysicalObject {
         internalDimensions = new float[]{0, 0, 0};
     }
 
-    private boolean setExternalDimensions(float[] exDim) {
+    private boolean setExternalDimensions(float[] exDim) throws Exceptions.NegativeDimensionsException{
+        if(exDim[0]<0 || exDim[1]<0 || exDim[2]<0)
+            throw new Exceptions.NegativeDimensionsException("You wanna create object with negative external dimensions");
         if (Arrays.equals(externalDimensions, new float[]{0, 0, 0})) {
             for (int i = 0; i < exDim.length && i < 3; i++)
                 this.externalDimensions[i] = exDim[i];
@@ -47,8 +56,9 @@ public abstract class PhysicalObject {
             return false;
 
     }
-
-    private boolean setInternalDimensions(float[] inDim) {
+    private boolean setInternalDimensions(float[] inDim) throws Exceptions.NegativeDimensionsException{
+        if(inDim[0]<0 || inDim[1]<0 || inDim[2]<0)
+            throw new Exceptions.NegativeDimensionsException("You wanna create object with negative internal dimensions");
         if (Arrays.equals(internalDimensions, new float[]{0, 0, 0})) {
             for (int i = 0; i < inDim.length && i < 3; i++)
                 this.internalDimensions[i] = inDim[i];
@@ -56,6 +66,7 @@ public abstract class PhysicalObject {
         } else
             return false;
     }
+
     public float[] getExternalDimensions()
     {
         return externalDimensions;

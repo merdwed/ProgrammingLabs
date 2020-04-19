@@ -18,14 +18,14 @@ public class Egg extends Food implements Frying, Breaking {
         shellBroken=brokeState;
         shelfLife=DEFAULT_SHELF_LIFE;
     }
-    public Egg(float[] exDim, Food.FoodState s, boolean brokeState, int shelfLifeP) {
+    public Egg(float[] exDim, Food.FoodState s, boolean brokeState, long shelfLifeP) {
         super(exDim);
         foodState=s;
         shellBroken=brokeState;
         shelfLife=shelfLifeP;
     }
-    private final int DEFAULT_SHELF_LIFE = 1440*90;
-    private final int COOKED_SHELF_LIFE = 1440*3;
+    private final long DEFAULT_SHELF_LIFE = WorldState.TimeController.FULL_DAY_LENGTH*90;
+    private final long COOKED_SHELF_LIFE = WorldState.TimeController.FULL_DAY_LENGTH*3;
     private boolean shellBroken;
     public boolean isShellBroken() {
         return shellBroken;
@@ -34,7 +34,7 @@ public class Egg extends Food implements Frying, Breaking {
         if(foodState.equals(Food.FoodState.RAW))
             return new Egg(getInternalDimensions(),Food.FoodState.COOKED,true,COOKED_SHELF_LIFE);
         if(foodState.equals(Food.FoodState.COOKED))
-            return new Egg(getInternalDimensions(),Food.FoodState.COAL,true,1440*365*300);
+            return new Egg(getInternalDimensions(), FoodState.COAL,true,WorldState.TimeController.FULL_DAY_LENGTH*365*300);
         return this;
     }
     public PhysicalObject onBreak(){

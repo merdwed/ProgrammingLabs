@@ -1,6 +1,5 @@
 package World;
 
-
 import java.util.ArrayList;
 
 public class WorldState {
@@ -56,9 +55,7 @@ public class WorldState {
             public static TimeState getTimeState() {
                 return timeState;
             }
-            protected void updateThis(){
-                System.out.println("update in WorldState");
-            }
+            protected void updateThis(){}
             final protected void updateContent() {
                 if (needToUpdateObjects != null) {
                     for (int i = 0; i < needToUpdateObjects.size(); i++) {
@@ -87,9 +84,9 @@ public class WorldState {
 
 
 
-        public static void addToGlobalTime(long delta){
-            //if(delta<0)
-            //    throw new TimeParadoxExceprion("Doctor Strange uses the time stone");
+        public static void addToGlobalTime(long delta) throws Exceptions.TimeParadoxException{
+            if(delta<0)
+                throw new Exceptions.TimeParadoxException("Doctor Strange are using the time stone. Universal was broke");
             globalTime+=delta;
             dayTime=globalTime%FULL_DAY_LENGTH;
 
@@ -100,19 +97,19 @@ public class WorldState {
             if(dayTime>=DAY_VAL        &&  dayTime<EVENING_VAL)   timeState=TimeState.DAY;
             if(dayTime>=EVENING_VAL    ||  dayTime<MIDNIGHT_VAL)  timeState=TimeState.EVENING;
             System.out.println("Global time: " + globalTime);
-            System.out.println("Day time: " + dayTime + " of " + FULL_DAY_LENGTH + ". Now is" +timeState.toString());
+            System.out.println("Day time: " + dayTime + " of " + FULL_DAY_LENGTH + ". Now is " +timeState.toString());
             //Weather.updateWeather();
             objectTimeController.updateContent();
         }
 
-        public static void setDayTime(long t){
+        public static void setDayTime(long t) throws Exceptions.TimeParadoxException{
             if(dayTime<t)
                 addToGlobalTime(t-dayTime);
             else
                 addToGlobalTime(t-dayTime+FULL_DAY_LENGTH);
         }
 
-        public static void setTimeState(TimeState s){
+        public static void setTimeState(TimeState s)throws Exceptions.TimeParadoxException{
             long val=0;
             switch(s){
                 case MIDNIGHT:

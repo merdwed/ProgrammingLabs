@@ -76,17 +76,6 @@ public class Human extends Container {
         }
         return false;
     }
-    public int getHungerPercentRate(){
-        return hunger;
-    }
-    public void someBadSituation(){
-        System.out.println(toString() + " has more upset");
-        happinessRate -=1;
-    }
-    public void someHappySituation(){
-        System.out.println(toString() + " has more happy");
-        happinessRate +=1;
-    }
     public boolean eatContent(){
         boolean b=false;
         for(int i=0;i<content.size();){
@@ -117,6 +106,19 @@ public class Human extends Container {
         }
         return b;
     }
+    public int getHungerPercentRate(){
+        return hunger;
+    }
+    public int getHappinessRate(){return happinessRate;}
+    public void someBadSituation(){
+        System.out.println(toString() + " has more upset");
+        happinessRate -=1;
+    }
+    public void someHappySituation(){
+        System.out.println(toString() + " has more happy");
+        happinessRate +=1;
+    }
+
     @Override
     public String toString(){
         return name;
