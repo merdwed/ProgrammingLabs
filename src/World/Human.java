@@ -1,6 +1,25 @@
 package World;
 
+import java.util.Objects;
+
 public class Human extends Container implements WarmSource {
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Human human = (Human) o;
+        return hunger == human.hunger &&
+                mood.equals(human.mood) &&
+                interactionTransfer.equals(human.interactionTransfer) &&
+                name.equals(human.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), mood, interactionTransfer, name, hunger);
+    }
+
     public Human() {
         this(new float[]{0, 0, 0});
     }
@@ -31,6 +50,19 @@ public class Human extends Container implements WarmSource {
     }
 
     public class Mood{
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Mood mood = (Mood) o;
+            return happinessRate == mood.happinessRate;
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(happinessRate);
+        }
+
         public Mood(){
             happinessRate=DEFAULT_HAPPY;
         }

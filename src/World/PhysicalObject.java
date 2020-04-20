@@ -3,6 +3,7 @@ package World;
 import Exceptions.NegativeDimensionsException;
 
 import java.util.Arrays;
+import java.util.Objects;
 //import Exceptions.NegativeDimensionsException;
 
 public abstract class PhysicalObject {
@@ -29,6 +30,25 @@ public abstract class PhysicalObject {
         objectTemperatureController=new PhysicalObjectTemperatureController();
         objectTimeController.needToUpdateObjects=null;
         objectTemperatureController.needToUpdateObjects=null;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        PhysicalObject that = (PhysicalObject) o;
+        return Objects.equals(objectTemperatureController, that.objectTemperatureController) &&
+                Objects.equals(objectTimeController, that.objectTimeController) &&
+                Arrays.equals(externalDimensions, that.externalDimensions) &&
+                Arrays.equals(internalDimensions, that.internalDimensions);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(objectTemperatureController, objectTimeController);
+        result = 31 * result + Arrays.hashCode(externalDimensions);
+        result = 31 * result + Arrays.hashCode(internalDimensions);
+        return result;
     }
 
     protected class PhysicalObjectTimeController extends WorldState.TimeController.ObjectTimeController{

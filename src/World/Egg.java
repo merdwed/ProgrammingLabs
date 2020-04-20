@@ -1,6 +1,21 @@
 package World;
 
+import java.util.Objects;
+
 public class Egg extends Food implements Frying, Breaking {
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Egg egg = (Egg) o;
+        return shellBroken == egg.shellBroken;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), shellBroken);
+    }
 
     public Egg(){
         this(new float[] {0,0,0});
