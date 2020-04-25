@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cee57ced-e382-4732-b29a-064ed8a29e8c" name="Default Changelist" comment="time class was added in WorldState. &#10;WorldState can be package with two non-static classes for time and for weather, but I want have a static classes for change time and weather.&#10;TimeController in WorldState have nested class, which can be extended in PhysicalObject class (and child)&#10;All who extends ObjectTimeController can override function updateThis(). This function are called by ObjectTimeController from another objects when time are changed. You can change some fields there (which logical connecting with time)&#10;also rename field &quot;state&quot; in Food class to &quot;foodState&quot;&#10;(yea, this changes, not extending, but I think it will be more friendly to use)">
-      <change beforePath="$PROJECT_DIR$/src/World/ChestBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/ChestBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World/Egg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Egg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World/Furnace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Furnace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World/PhysicalObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World/PhysicalObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/Taller/Lab4Taller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/Taller/Lab4Taller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Taller/Lab4Taller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Taller/Lab4Taller.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,21 +16,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/World/Human.java">
+        <entry file="file://$PROJECT_DIR$/src/World/Container.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+            <state relative-caret-position="528">
+              <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
               <folding>
-                <element signature="e#581#582#0" expanded="true" />
-                <element signature="e#675#676#0" expanded="true" />
-                <element signature="class#Mood#0;class#Human#0" />
-                <element signature="method#equals#0;class#Mood#0;class#Human#0" />
-                <element signature="e#1918#1919#0" expanded="true" />
-                <element signature="e#1976#1977#0" expanded="true" />
-                <element signature="class#InteractionTransfer#0;class#Human#0" />
-                <element signature="method#putContentObjectTo#0;class#InteractionTransfer#0;class#Human#0" />
-                <element signature="method#breakContent#0;class#Human#0" />
+                <element signature="method#Container#1;class#Container#0" />
+                <element signature="method#Container#2;class#Container#0" />
+                <element signature="method#put#0;class#Container#0" />
+                <element signature="method#keyChecker#0;class#Container#0" />
+                <element signature="method#find#1;class#Container#0" />
+                <element signature="e#2693#2694#0" expanded="true" />
+                <element signature="e#2749#2750#0" expanded="true" />
+                <element signature="method#findAndGet#0;class#Container#0" />
+                <element signature="method#findAndGet#1;class#Container#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Taller/Lab4Taller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="565">
+              <caret line="103" column="30" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -41,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/World/Kitchen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+            <state relative-caret-position="112">
+              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
               <folding>
                 <element signature="e#73#74#0" expanded="true" />
                 <element signature="e#115#116#0" expanded="true" />
@@ -58,7 +64,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/World/Pan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
+            <state relative-caret-position="128">
               <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
               <folding>
                 <element signature="e#70#71#0" expanded="true" />
@@ -94,7 +100,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/World/Trousers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="144">
               <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
               <folding>
                 <element signature="e#105#106#0" expanded="true" />
@@ -117,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/World/FireWood.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+            <state relative-caret-position="80">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding>
                 <element signature="e#103#104#0" expanded="true" />
                 <element signature="e#145#146#0" expanded="true" />
@@ -135,30 +141,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/World/Furnace.java">
+        <entry file="file://$PROJECT_DIR$/src/World/Food.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+            <state relative-caret-position="608">
+              <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
               <folding>
-                <element signature="e#551#552#0" expanded="true" />
-                <element signature="e#644#645#0" expanded="true" />
-                <element signature="class#FurnaceTimeController#0;class#Furnace#0" />
-                <element signature="method#burnContent#0;class#Furnace#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/World/Furniture.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#183#184#0" expanded="true" />
-                <element signature="e#232#233#0" expanded="true" />
-                <element signature="e#286#287#0" expanded="true" />
-                <element signature="e#321#322#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#492#493#0" expanded="true" />
+                <element signature="e#567#568#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -227,7 +217,6 @@
         <option value="$PROJECT_DIR$/src/World/WarmSource.java" />
         <option value="$PROJECT_DIR$/src/Taller/Lab3Taller.java" />
         <option value="$PROJECT_DIR$/src/World/Transferring.java" />
-        <option value="$PROJECT_DIR$/src/Taller/Lab4Taller.java" />
         <option value="$PROJECT_DIR$/src/World/WorldState.java" />
         <option value="$PROJECT_DIR$/src/World/Room.java" />
         <option value="$PROJECT_DIR$/src/World/PhysicalObject.java" />
@@ -237,6 +226,7 @@
         <option value="$PROJECT_DIR$/src/World/Egg.java" />
         <option value="$PROJECT_DIR$/src/World/Furnace.java" />
         <option value="$PROJECT_DIR$/src/World/Human.java" />
+        <option value="$PROJECT_DIR$/src/Taller/Lab4Taller.java" />
       </list>
     </option>
   </component>
@@ -252,6 +242,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -286,14 +277,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587376966936" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587390337733" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/World" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -346,7 +336,8 @@
       <workItem from="1586277016588" duration="3057000" />
       <workItem from="1586423311654" duration="24387000" />
       <workItem from="1586641751768" duration="35716000" />
-      <workItem from="1587233632772" duration="42768000" />
+      <workItem from="1587233632772" duration="46662000" />
+      <workItem from="1587817440156" duration="101000" />
     </task>
     <task id="LOCAL-00001" summary="I want to add weather">
       <created>1586648855796</created>
@@ -359,7 +350,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148270000" />
+    <option name="totallyTimeSpent" value="152265000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -374,14 +365,14 @@
     <frame x="19" y="59" width="1260" height="942" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1775" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" visible="true" weight="0.32881773" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32881773" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32881773" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.3596059" />
@@ -396,7 +387,7 @@
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Maven" order="5" />
@@ -442,7 +433,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="53.0" y="93.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="53.0" y="94.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
@@ -489,54 +480,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umlLab4.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-253.0" y="3.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/uml.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-253.5" y="3.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lab4.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-253.5" y="3.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/umlLab4.uml" />
+    <entry file="file://$PROJECT_DIR$/src/World/uml.uml" />
+    <entry file="file://$PROJECT_DIR$/src/lab4.uml" />
     <entry file="file://$PROJECT_DIR$/src/Taller/Lab3Taller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="832">
@@ -592,6 +538,7 @@
           <Categories>
             <Category>All</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
           <VISIBILITY>Details</VISIBILITY>
         </state>
       </provider>
@@ -1352,13 +1299,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Taller/Lab4Taller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="89" column="14" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/World/WarmSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -1406,25 +1346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Container.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="method#Container#1;class#Container#0" />
-            <element signature="method#Container#2;class#Container#0" />
-            <element signature="method#put#0;class#Container#0" />
-            <element signature="method#keyChecker#0;class#Container#0" />
-            <element signature="method#find#0;class#Container#0" />
-            <element signature="method#find#1;class#Container#0" />
-            <element signature="e#2693#2694#0" expanded="true" />
-            <element signature="e#2749#2750#0" expanded="true" />
-            <element signature="method#findAndGet#0;class#Container#0" />
-            <element signature="method#findAndGet#1;class#Container#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/World/WorldState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -1448,26 +1369,6 @@
             <element signature="method#ChestBox#1;class#ChestBox#0" />
             <element signature="method#ChestBox#2;class#ChestBox#0" />
             <element signature="class#ChestBoxTemperatureController#0;class#ChestBox#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/World/Food.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#116#117#0" expanded="true" />
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#191#192#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1530,10 +1431,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+          <folding>
+            <element signature="method#Container#1;class#Container#0" />
+            <element signature="method#Container#2;class#Container#0" />
+            <element signature="method#put#0;class#Container#0" />
+            <element signature="method#keyChecker#0;class#Container#0" />
+            <element signature="method#find#1;class#Container#0" />
+            <element signature="e#2693#2694#0" expanded="true" />
+            <element signature="e#2749#2750#0" expanded="true" />
+            <element signature="method#findAndGet#0;class#Container#0" />
+            <element signature="method#findAndGet#1;class#Container#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/World/Kitchen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        <state relative-caret-position="112">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
           <folding>
             <element signature="e#73#74#0" expanded="true" />
             <element signature="e#115#116#0" expanded="true" />
@@ -1547,7 +1466,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/World/Pan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
+        <state relative-caret-position="128">
           <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding>
             <element signature="e#70#71#0" expanded="true" />
@@ -1577,7 +1496,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/World/Trousers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
+        <state relative-caret-position="144">
           <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
           <folding>
             <element signature="e#105#106#0" expanded="true" />
@@ -1599,8 +1518,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/World/FireWood.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        <state relative-caret-position="80">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding>
             <element signature="e#103#104#0" expanded="true" />
             <element signature="e#145#146#0" expanded="true" />
@@ -1609,6 +1528,25 @@
             <element signature="e#285#286#0" expanded="true" />
             <element signature="e#320#321#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Taller/Lab4Taller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="103" column="30" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
         </state>
       </provider>
     </entry>

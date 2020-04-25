@@ -101,6 +101,7 @@ public class Lab4Taller extends StoryTaller{
             actionRoom.put(box);
             WorldState.TimeController.setTimeState(WorldState.TimeController.TimeState.MIDNIGHT);
         }
+        actionRoom.put(julio);
 
     }
 
